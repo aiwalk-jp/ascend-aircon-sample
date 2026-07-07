@@ -1,0 +1,54 @@
+import type { SiteData } from '../types';
+
+// 業種ベース：外構・エクステリア（仮会社「サンプルエクステリア」）
+export const baseExterior: SiteData = {
+  slug: 'base-exterior',
+  logoText: 'E',
+  theme: { primary: '#22402f', secondary: '#6b7280', accent: '#a8a29e' },
+  name: 'サンプルエクステリア',
+  subName: '住まいの外まわりをデザインする外構・エクステリア',
+  tagline: '住まいの印象を決める、\n外まわりのデザイン。',
+  lead: '駐車場・アプローチ・門まわり・フェンスなど、住まいの外構づくりからリフォームまで、暮らしやすさと見た目を両立します。',
+  description: '新築・リフォームの外構工事を行います。使いやすさとデザイン性を両立し、住まい全体の印象を高めるご提案を大切にしています。',
+  area: '地域密着で対応',
+  areaNote: '地域のお客様の外まわりを丁寧に施工します',
+  tel: '000-0000-0000',
+  hours: 'お電話でお気軽にご相談ください',
+  address: '〒000-0000 ○○県○○市○○ 1-2-3',
+  mapUrl: 'https://www.google.com/maps',
+  heroImage: '/images/base-exterior/hero.jpg',
+  stats: [
+    { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
+    { label: '対応範囲', value: '設計〜施工', note: 'プランから施工まで一貫' },
+    { label: '相談方法', value: '見積り無料', note: 'イメージのご相談から歓迎' },
+    { label: '提案方針', value: '暮らし重視', note: '使いやすさと見た目を両立' },
+  ],
+  services: [
+    { name: '駐車場・カーポート', label: 'PARKING', text: '土間コンクリートやカーポートなど、使いやすい駐車スペースをつくります。', image: '/images/base-exterior/work1.jpg' },
+    { name: 'アプローチ・門まわり', label: 'APPROACH', text: '玄関までのアプローチや門まわりを、住まいに合わせてデザインします。', image: '/images/base-exterior/work2.jpg' },
+    { name: 'フェンス・塀', label: 'FENCE', text: 'プライバシーや防犯に配慮したフェンス・塀の設置に対応します。', image: '/images/base-exterior/work3.jpg' },
+    { name: 'ウッドデッキ・テラス', label: 'DECK', text: '庭を活かすウッドデッキやテラスで、暮らしの空間を広げます。', image: '/images/base-exterior/work1.jpg' },
+    { name: '庭・植栽づくり', label: 'GARDEN', text: '植栽やタイルなどを組み合わせ、心地よい庭空間をつくります。', image: '/images/base-exterior/work2.jpg' },
+    { name: '外構リフォーム', label: 'RENEWAL', text: '古くなった外構の改修・リフォームにも対応します。', image: '/images/base-exterior/work3.jpg' },
+  ],
+  strengths: [
+    { title: '暮らしやすさへのこだわり', text: '見た目だけでなく、日々の使いやすさを考えたご提案を行います。', label: 'LIVING' },
+    { title: 'プランから施工まで一貫対応', text: '設計・提案・施工まで一貫し、イメージを形にします。', label: 'ONE STOP' },
+    { title: '地域密着の丁寧な対応', text: '地域のお客様に寄り添い、小さなご相談から対応します。', label: 'LOCAL' },
+  ],
+  flow: ['お問い合わせ', '現地調査・ヒアリング', 'プラン・お見積り', 'ご契約', '施工', '完了確認・お引き渡し'],
+  works: [
+    { title: '駐車場・アプローチ工事', area: '対応エリア内', period: '施工期間：7〜14日間', description: '使いやすさと見た目を両立した、駐車場とアプローチを施工しました。', image: '/images/base-exterior/work1.jpg' },
+    { title: 'フェンス・門まわり工事', area: '対応エリア内', period: '施工期間：3〜7日間', description: 'プライバシーに配慮したフェンスと門まわりを設置しました。', image: '/images/base-exterior/work2.jpg' },
+  ],
+  recruit: {
+    title: '外まわりをつくるスタッフを募集しています',
+    catch: 'ものづくりが好きな方、丁寧な仕事にやりがいを感じる方を歓迎します。',
+    jobs: ['外構工事スタッフ', '現場アシスタント', '設計・プランナー'],
+    points: ['形に残る仕事', '現場で技術が身につく', '経験者は優遇', '未経験者も基礎からサポート'],
+    message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
+    applyUrl: '',
+    image: '/images/base-exterior/recruit.jpg',
+    subImage: '/images/base-exterior/work3.jpg',
+  },
+};

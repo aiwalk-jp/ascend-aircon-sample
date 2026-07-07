@@ -30,6 +30,8 @@ export default async function Home({ params }: Props) {
   const base = `/demo/${site.slug}`;
   const heroServices = site.services.slice(0, Math.min(site.services.length, 3));
   const visibleServices = site.services.slice(0, Math.min(site.services.length, 6));
+  // TOPページの施工事例は2件まで表示（「選ばれる理由」との高さバランスを揃えるため）
+  const visibleWorks = site.works.slice(0, 2);
   const hasStats = site.stats.length > 0;
   const hasStrengths = site.strengths.length > 0;
   const hasWorks = site.works.length > 0;
@@ -136,8 +138,8 @@ export default async function Home({ params }: Props) {
                     <a href="#services" className="group hidden rounded-full border border-slate-300 bg-white px-6 py-3 font-black shadow-sm md:inline-block">対応サービス<SmallArrow /></a>
                   </div>
                   <div className="mt-8 rounded-[2rem] bg-gradient-to-br from-[#063b42] to-[#071525] p-6 text-white shadow-[0_28px_80px_rgba(15,23,42,.20)]">
-                    <div className={`grid gap-5 ${gridClass(site.works.length, 2)}`}>
-                      {site.works.map((w) => (
+                    <div className={`grid gap-5 ${gridClass(visibleWorks.length, 2)}`}>
+                      {visibleWorks.map((w) => (
                         <article key={`${w.title}-${w.area}`} className="flex h-full flex-col overflow-hidden rounded-2xl bg-white/8 p-3 ring-1 ring-white/10">
                           <PhotoFrame label={`${w.title}の施工前後写真`} tone="dark" src={w.image} className="min-h-[200px] rounded-xl border-white/10 shadow-none" />
                           <div className="flex flex-1 flex-col p-3">

@@ -1,0 +1,54 @@
+import type { SiteData } from '../types';
+
+// 業種ベース：電気工事（仮会社「サンプル電気工事」）
+export const baseElectric: SiteData = {
+  slug: 'base-electric',
+  logoText: 'E',
+  theme: { primary: '#14263d', secondary: '#1f2a44', accent: '#e6b800' },
+  name: 'サンプル電気工事',
+  subName: '暮らしと店舗を支える電気工事',
+  tagline: '暮らしと事業の電気を、\n安全に整える。',
+  lead: 'コンセント増設・照明工事・分電盤交換から、店舗・事務所の電気設備工事まで。安全を第一に丁寧に施工します。',
+  description: '住宅から店舗・事務所まで、幅広い電気工事に対応します。安全基準を守り、暮らしと事業の電気環境を丁寧に整えます。',
+  area: '地域密着で対応',
+  areaNote: '地域のお客様へ迅速に対応いたします',
+  tel: '000-0000-0000',
+  hours: 'お電話でお気軽にご相談ください',
+  address: '〒000-0000 ○○県○○市○○ 1-2-3',
+  mapUrl: 'https://www.google.com/maps',
+  heroImage: '/images/base-electric/hero.jpg',
+  stats: [
+    { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
+    { label: '対応範囲', value: '住宅〜店舗', note: '各種電気工事に対応' },
+    { label: '相談方法', value: '電話相談OK', note: '小さな工事もご相談を' },
+    { label: '施工方針', value: '安全第一', note: '安全基準を守って施工' },
+  ],
+  services: [
+    { name: 'コンセント・スイッチ工事', label: 'OUTLET', text: 'コンセントの増設や位置変更、スイッチの交換に対応します。', image: '/images/base-electric/work1.jpg' },
+    { name: '照明・LED工事', label: 'LIGHTING', text: '照明器具の取付・交換やLED化で、明るく省エネな空間にします。', image: '/images/base-electric/work2.jpg' },
+    { name: '分電盤・ブレーカー', label: 'PANEL', text: '分電盤の交換やブレーカー増設で、安全な電気環境を整えます。', image: '/images/base-electric/work3.jpg' },
+    { name: 'エアコン電源工事', label: 'AC POWER', text: 'エアコン専用回路の増設など、電源まわりの工事に対応します。', image: '/images/base-electric/work1.jpg' },
+    { name: '店舗・事務所の電気設備', label: 'FACILITY', text: '店舗・事務所の電気設備工事や配線工事に対応します。', image: '/images/base-electric/work2.jpg' },
+    { name: '各種電気工事のご相談', label: 'SUPPORT', text: '電気にまつわる小さなお困りごとも、お気軽にご相談ください。', image: '/images/base-electric/work3.jpg' },
+  ],
+  strengths: [
+    { title: '安全を第一にした施工', text: '安全基準を守り、確実で丁寧な電気工事を行います。', label: 'SAFETY' },
+    { title: '住宅から店舗まで幅広く対応', text: '家庭の小さな工事から店舗の設備工事まで、幅広く対応します。', label: 'WIDE RANGE' },
+    { title: '地域密着のスピード対応', text: '地域のお客様のお困りごとに、できる限り迅速に対応します。', label: 'LOCAL SPEED' },
+  ],
+  flow: ['お問い合わせ', '現地確認・ヒアリング', 'お見積り・ご提案', 'ご契約', '施工', '完了確認・アフター'],
+  works: [
+    { title: 'コンセント増設・照明工事', area: '対応エリア内', period: '作業時間：半日', description: 'コンセントの増設と照明のLED化を、安全に配慮して施工しました。', image: '/images/base-electric/work1.jpg' },
+    { title: '分電盤の交換工事', area: '対応エリア内', period: '作業時間：半日〜1日', description: '分電盤を交換し、安全に使える電気環境を整えました。', image: '/images/base-electric/work2.jpg' },
+  ],
+  recruit: {
+    title: '電気工事スタッフを募集しています',
+    catch: '未経験でも、手に職をつけたい方・誠実に向き合える方を歓迎します。',
+    jobs: ['電気工事スタッフ', '現場アシスタント', '施工管理'],
+    points: ['資格取得を応援', '現場で技術が身につく', '経験者・有資格者は優遇', '未経験者も基礎からサポート'],
+    message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
+    applyUrl: '',
+    image: '/images/base-electric/recruit.jpg',
+    subImage: '/images/base-electric/work3.jpg',
+  },
+};

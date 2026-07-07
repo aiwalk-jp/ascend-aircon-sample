@@ -21,9 +21,18 @@ export type Recruit = {
   subImage?: string;
 };
 
+/**
+ * 業種別のイメージカラー（メタデータ）。
+ * v12テンプレートの販売品質を最優先するため、現状レンダリングはv12パレット（teal×gold×slate）を維持し、
+ * この値は「業種の想定カラー」の記録・将来のテーマ化/CSV連携用として保持する。
+ */
+export type Theme = { primary: string; secondary: string; accent: string };
+
 export type SiteData = {
   /** URL スラッグ（/demo/<slug>）。data/sites/<slug>.ts と一致させる */
   slug: string;
+  /** 業種の想定イメージカラー（メタデータ。現状デザインには未適用） */
+  theme?: Theme;
   /** ヘッダーロゴの1文字（会社イニシャル等） */
   logoText: string;
   name: string;

@@ -1,0 +1,54 @@
+import type { SiteData } from '../types';
+
+// 業種ベース：ハウスクリーニング（仮会社「サンプルクリーニング」）
+export const baseHouseCleaning: SiteData = {
+  slug: 'base-house-cleaning',
+  logoText: 'H',
+  theme: { primary: '#0e6e6a', secondary: '#2a9d8f', accent: '#bfe3e0' },
+  name: 'サンプルクリーニング',
+  subName: '住まいをきれいに整えるハウスクリーニング',
+  tagline: '暮らしの気になる汚れを、\nすっきり解決。',
+  lead: 'エアコンや水まわり、レンジフードなど、ご家庭の落ちにくい汚れを専門の技術と道具で丁寧にクリーニングします。',
+  description: 'キッチン・浴室・エアコンなど、住まいのあらゆる場所のクリーニングに対応します。丁寧な作業と分かりやすい説明を大切にしています。',
+  area: '地域密着で対応',
+  areaNote: '地域のお客様の住まいを丁寧に清掃します',
+  tel: '000-0000-0000',
+  hours: 'お電話でお気軽にご相談ください',
+  address: '〒000-0000 ○○県○○市○○ 1-2-3',
+  mapUrl: 'https://www.google.com/maps',
+  heroImage: '/images/base-house-cleaning/hero.jpg',
+  stats: [
+    { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
+    { label: '対応範囲', value: '住まい全般', note: '水まわり〜エアコンまで' },
+    { label: '相談方法', value: '見積り無料', note: '汚れの状態をご相談ください' },
+    { label: '作業品質', value: '丁寧作業', note: '専門の技術と道具で対応' },
+  ],
+  services: [
+    { name: 'エアコンクリーニング', label: 'AIRCON', text: '内部を分解洗浄し、におい・カビ・汚れをすっきり除去します。', image: '/images/base-house-cleaning/work1.jpg' },
+    { name: 'キッチン・レンジフード', label: 'KITCHEN', text: '油汚れがたまりやすいレンジフードやコンロまわりを丁寧に洗浄します。', image: '/images/base-house-cleaning/work2.jpg' },
+    { name: '浴室クリーニング', label: 'BATH', text: '水垢やカビが気になる浴室を、専用の洗剤と道具でクリーニングします。', image: '/images/base-house-cleaning/work3.jpg' },
+    { name: 'トイレ・洗面所', label: 'SANITARY', text: '水まわりの気になる汚れを除去し、清潔な状態に整えます。', image: '/images/base-house-cleaning/work1.jpg' },
+    { name: '床・窓・サッシ', label: 'FLOOR', text: '床のワックスや窓・サッシの汚れなど、住まい全体をきれいにします。', image: '/images/base-house-cleaning/work2.jpg' },
+    { name: '空室・退去前清掃', label: 'VACANCY', text: '引っ越しや退去前のまとめて清掃にも対応します。', image: '/images/base-house-cleaning/work3.jpg' },
+  ],
+  strengths: [
+    { title: '汚れに合わせた丁寧な作業', text: '場所や汚れの状態に合わせて、最適な洗浄方法で対応します。', label: 'CAREFUL' },
+    { title: '分かりやすい料金とご説明', text: '作業前に内容と料金をご説明し、安心してご依頼いただけます。', label: 'CLEAR' },
+    { title: '地域密着で気軽に相談', text: '小さな汚れのご相談から、地域のお客様に寄り添って対応します。', label: 'LOCAL' },
+  ],
+  flow: ['お問い合わせ', '汚れの状態確認', 'お見積り・ご提案', 'ご予約', '作業', '仕上がり確認'],
+  works: [
+    { title: 'エアコンクリーニング', area: '対応エリア内', period: '作業時間：1〜2時間', description: '内部を分解して洗浄し、においやカビをすっきり除去しました。', image: '/images/base-house-cleaning/work1.jpg' },
+    { title: 'レンジフード洗浄', area: '対応エリア内', period: '作業時間：2〜3時間', description: 'たまった油汚れを丁寧に落とし、清潔な状態に仕上げました。', image: '/images/base-house-cleaning/work2.jpg' },
+  ],
+  recruit: {
+    title: '住まいをきれいにするスタッフを募集しています',
+    catch: '掃除が好きな方、丁寧な作業にやりがいを感じる方を歓迎します。',
+    jobs: ['クリーニングスタッフ', '現場アシスタント', '受付・見積り対応'],
+    points: ['技術を丁寧に習得できる', 'お客様に感謝される仕事', '経験者は優遇', '未経験者も基礎からサポート'],
+    message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
+    applyUrl: '',
+    image: '/images/base-house-cleaning/recruit.jpg',
+    subImage: '/images/base-house-cleaning/work3.jpg',
+  },
+};

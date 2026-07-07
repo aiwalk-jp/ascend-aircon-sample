@@ -1,0 +1,54 @@
+import type { SiteData } from '../types';
+
+// 業種ベース：内装・クロス（仮会社「サンプル内装」）
+export const baseInteriorCross: SiteData = {
+  slug: 'base-interior-cross',
+  logoText: 'I',
+  theme: { primary: '#6b4f3a', secondary: '#143a2e', accent: '#d8c7a8' },
+  name: 'サンプル内装',
+  subName: '住まいと店舗を整える内装・クロス工事',
+  tagline: '空間の印象を変える、\n内装リフォーム。',
+  lead: 'クロス（壁紙）の張り替えから、床材の施工、内装リフォーム、原状回復まで。住まいや店舗の空間を丁寧に整えます。',
+  description: '住宅・店舗の内装工事を行います。クロスや床の張り替えから内装リフォームまで、空間の印象を高める施工を大切にしています。',
+  area: '地域密着で対応',
+  areaNote: '地域のお客様の空間を丁寧に整えます',
+  tel: '000-0000-0000',
+  hours: 'お電話でお気軽にご相談ください',
+  address: '〒000-0000 ○○県○○市○○ 1-2-3',
+  mapUrl: 'https://www.google.com/maps',
+  heroImage: '/images/base-interior-cross/hero.jpg',
+  stats: [
+    { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
+    { label: '対応範囲', value: 'クロス〜床', note: '内装リフォーム全般' },
+    { label: '相談方法', value: '見積り無料', note: 'イメージのご相談から歓迎' },
+    { label: '仕上がり', value: '丁寧仕上げ', note: '継ぎ目まで美しく施工' },
+  ],
+  services: [
+    { name: 'クロス張り替え', label: 'WALLPAPER', text: '壁紙の張り替えで、お部屋の印象を明るく一新します。', image: '/images/base-interior-cross/work1.jpg' },
+    { name: '床材・フローリング', label: 'FLOORING', text: 'フローリングやクッションフロアなど、床材の施工に対応します。', image: '/images/base-interior-cross/work2.jpg' },
+    { name: '内装リフォーム', label: 'RENEWAL', text: 'お部屋全体の内装リフォームで、住まいの空間を整えます。', image: '/images/base-interior-cross/work3.jpg' },
+    { name: '店舗内装工事', label: 'SHOP', text: '店舗・テナントの内装工事や、イメージづくりに対応します。', image: '/images/base-interior-cross/work1.jpg' },
+    { name: '原状回復工事', label: 'RESTORE', text: '退去に伴う原状回復工事にも、丁寧に対応します。', image: '/images/base-interior-cross/work2.jpg' },
+    { name: '部分補修のご相談', label: 'REPAIR', text: 'クロスの一部補修など、小さなご相談もお気軽にどうぞ。', image: '/images/base-interior-cross/work3.jpg' },
+  ],
+  strengths: [
+    { title: '継ぎ目まで美しい仕上がり', text: 'クロスや床の継ぎ目まで丁寧に仕上げ、美しい空間をつくります。', label: 'FINISH' },
+    { title: 'イメージに合わせたご提案', text: '色柄や素材のご希望に合わせて、空間づくりをご提案します。', label: 'DESIGN' },
+    { title: '住宅から店舗まで対応', text: '住まいの一室から店舗内装まで、幅広く対応します。', label: 'WIDE RANGE' },
+  ],
+  flow: ['お問い合わせ', '現地確認・ヒアリング', 'お見積り・ご提案', 'ご契約', '施工', '仕上がり確認・お引き渡し'],
+  works: [
+    { title: 'クロス張り替え工事', area: '対応エリア内', period: '施工期間：1〜3日間', description: '壁紙を張り替え、お部屋の印象を明るく一新しました。', image: '/images/base-interior-cross/work1.jpg' },
+    { title: '床材の張り替え工事', area: '対応エリア内', period: '施工期間：1〜3日間', description: '床材を新しくし、清潔感のある空間に仕上げました。', image: '/images/base-interior-cross/work2.jpg' },
+  ],
+  recruit: {
+    title: '空間を整える内装スタッフを募集しています',
+    catch: 'ものづくりが好きな方、丁寧な仕上げにやりがいを感じる方を歓迎します。',
+    jobs: ['内装・クロススタッフ', '床施工スタッフ', '現場アシスタント'],
+    points: ['技術を丁寧に習得できる', '形に残る仕事', '経験者は優遇', '未経験者も基礎からサポート'],
+    message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
+    applyUrl: '',
+    image: '/images/base-interior-cross/recruit.jpg',
+    subImage: '/images/base-interior-cross/work3.jpg',
+  },
+};

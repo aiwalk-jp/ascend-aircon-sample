@@ -1,0 +1,54 @@
+import type { SiteData } from '../types';
+
+// 業種ベース：カーコーティング（仮会社「サンプルカーコーティング」）
+export const baseCarCoating: SiteData = {
+  slug: 'base-car-coating',
+  logoText: 'C',
+  theme: { primary: '#111318', secondary: '#2b2f36', accent: '#c7ccd1' },
+  name: 'サンプルカーコーティング',
+  subName: '愛車を守るコーティング・洗車の専門店',
+  tagline: '愛車の輝きを、\n長く美しく守る。',
+  lead: 'ガラスコーティングやポリッシュ、ホイール・室内クリーニングまで、愛車の状態に合わせて最適な施工をご提案します。',
+  description: '新車・中古車を問わず、ボディの美しさと保護を両立するコーティングを行う専門店です。丁寧な下地処理と仕上がりにこだわっています。',
+  area: '地域密着で対応',
+  areaNote: '地域のお客様の愛車を丁寧に施工します',
+  tel: '000-0000-0000',
+  hours: 'お電話でお気軽にご相談ください',
+  address: '〒000-0000 ○○県○○市○○ 1-2-3',
+  mapUrl: 'https://www.google.com/maps',
+  heroImage: '/images/base-car-coating/hero.jpg',
+  stats: [
+    { label: '対応車種', value: '幅広く対応', note: '新車・中古車どちらも' },
+    { label: '施工内容', value: '下地〜仕上げ', note: '丁寧な下地処理を重視' },
+    { label: '相談方法', value: '見積り無料', note: '状態確認・ご相談歓迎' },
+    { label: '仕上がり', value: '深い艶感', note: '長期の保護と美観を両立' },
+  ],
+  services: [
+    { name: 'ガラスコーティング', label: 'GLASS COAT', text: 'ボディを保護し、深い艶と防汚性を高めるガラスコーティングを施工します。', image: '/images/base-car-coating/work1.jpg' },
+    { name: 'ポリッシュ・磨き', label: 'POLISH', text: '細かなキズやくすみを整え、塗装本来の輝きを引き出します。', image: '/images/base-car-coating/work2.jpg' },
+    { name: '洗車・下地処理', label: 'WASH', text: 'コーティング前の丁寧な洗車・下地処理で仕上がりの質を高めます。', image: '/images/base-car-coating/work3.jpg' },
+    { name: 'ホイールコーティング', label: 'WHEEL', text: 'ブレーキダストや汚れが付きにくいよう、ホイールもコーティングします。', image: '/images/base-car-coating/work1.jpg' },
+    { name: '室内クリーニング', label: 'INTERIOR', text: 'シートやダッシュボードなど、車内の清掃・除菌にも対応します。', image: '/images/base-car-coating/work2.jpg' },
+    { name: 'メンテナンス施工', label: 'MAINTENANCE', text: 'コーティング後の状態維持のためのメンテナンス施工も承ります。', image: '/images/base-car-coating/work3.jpg' },
+  ],
+  strengths: [
+    { title: '丁寧な下地処理へのこだわり', text: '仕上がりを左右する洗車・下地処理を一台ずつ丁寧に行います。', label: 'BASE CARE' },
+    { title: '車種・状態に合わせた提案', text: 'ボディの状態やご希望に合わせて最適な施工内容をご提案します。', label: 'CUSTOM' },
+    { title: '長く続く美しさ', text: '施工後も美観を保てるよう、メンテナンスまでサポートします。', label: 'LONG KEEP' },
+  ],
+  flow: ['お問い合わせ', '車両の状態確認', 'お見積り・ご提案', 'ご予約', '施工', '仕上がり確認・お引き渡し'],
+  works: [
+    { title: 'ガラスコーティング施工', area: '対応エリア内', period: '施工時間：1〜2日', description: '下地処理からコーティングまで丁寧に行い、深い艶に仕上げました。', image: '/images/base-car-coating/work1.jpg' },
+    { title: 'ポリッシュ・磨き施工', area: '対応エリア内', period: '施工時間：1日', description: '細かなキズやくすみを整え、塗装本来の輝きを取り戻しました。', image: '/images/base-car-coating/work2.jpg' },
+  ],
+  recruit: {
+    title: '愛車を美しく仕上げるスタッフを募集しています',
+    catch: '車が好きな方、丁寧な作業にやりがいを感じる方を歓迎します。',
+    jobs: ['コーティングスタッフ', '洗車・下地処理スタッフ', '受付・見積り対応'],
+    points: ['技術を丁寧に習得できる', '仕上がりで感謝される仕事', '経験者は優遇', '未経験者も基礎からサポート'],
+    message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
+    applyUrl: '',
+    image: '/images/base-car-coating/recruit.jpg',
+    subImage: '/images/base-car-coating/work3.jpg',
+  },
+};

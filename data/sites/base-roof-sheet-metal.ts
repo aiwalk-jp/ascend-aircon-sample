@@ -1,0 +1,54 @@
+import type { SiteData } from '../types';
+
+// 業種ベース：屋根・建築板金（仮会社「サンプル屋根板金」）
+export const baseRoofSheetMetal: SiteData = {
+  slug: 'base-roof-sheet-metal',
+  logoText: 'R',
+  theme: { primary: '#14263d', secondary: '#4b5563', accent: '#8b98a5' },
+  name: 'サンプル屋根板金',
+  subName: '住まいを守る屋根工事・建築板金',
+  tagline: '住まいを雨風から守る、\n確かな屋根工事。',
+  lead: '屋根の葺き替え・カバー工法から、雨樋・板金工事、雨漏り対応まで。住まいの状態に合わせて的確に施工します。',
+  description: '屋根工事・建築板金を専門に、住まいを雨風から守る施工を行います。現地調査から施工後のフォローまで一貫して対応します。',
+  area: '地域密着で対応',
+  areaNote: '地域のお客様の住まいを丁寧に守ります',
+  tel: '000-0000-0000',
+  hours: 'お電話でお気軽にご相談ください',
+  address: '〒000-0000 ○○県○○市○○ 1-2-3',
+  mapUrl: 'https://www.google.com/maps',
+  heroImage: '/images/base-roof-sheet-metal/hero.jpg',
+  stats: [
+    { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
+    { label: '対応範囲', value: '調査〜施工後', note: '雨漏り対応まで一貫' },
+    { label: '相談方法', value: '見積り無料', note: '屋根の状態をご相談ください' },
+    { label: '説明方針', value: '写真で共有', note: '劣化状況を見える化' },
+  ],
+  services: [
+    { name: '屋根葺き替え', label: 'RE-ROOF', text: '劣化した屋根材を新しくし、住まいの防水性・耐久性を高めます。', image: '/images/base-roof-sheet-metal/work1.jpg' },
+    { name: 'カバー工法', label: 'COVER', text: '既存屋根の上に新しい屋根材を重ね、費用を抑えて改修します。', image: '/images/base-roof-sheet-metal/work2.jpg' },
+    { name: '雨樋工事', label: 'GUTTER', text: '雨樋の詰まり・破損を確認し、交換・補修に対応します。', image: '/images/base-roof-sheet-metal/work3.jpg' },
+    { name: '板金工事', label: 'SHEET METAL', text: '棟板金や外壁板金など、建築板金の各種工事に対応します。', image: '/images/base-roof-sheet-metal/work1.jpg' },
+    { name: '雨漏り対応', label: 'LEAK', text: '原因を調査し、写真をもとに分かりやすくご説明して補修します。', image: '/images/base-roof-sheet-metal/work2.jpg' },
+    { name: '屋根点検・メンテナンス', label: 'INSPECTION', text: '定期的な点検やメンテナンスで、屋根を長持ちさせます。', image: '/images/base-roof-sheet-metal/work3.jpg' },
+  ],
+  strengths: [
+    { title: '調査から施工後まで一貫対応', text: '調査・見積・施工・完了確認まで、責任を持って対応します。', label: 'ONE STOP' },
+    { title: '写真を活かした分かりやすい説明', text: '見えにくい屋根の状況を写真で共有し、納得感のある提案を行います。', label: 'PHOTO REPORT' },
+    { title: '地域密着のスピード対応', text: '雨漏りなど急ぎのご相談にも、できる限り迅速に対応します。', label: 'LOCAL SPEED' },
+  ],
+  flow: ['お問い合わせ', '現地調査', 'お見積り・ご提案', 'ご契約', '施工', '完了確認・アフター'],
+  works: [
+    { title: '屋根葺き替え工事', area: '対応エリア内', period: '施工期間：7〜14日間', description: '劣化した屋根材を一新し、防水性を高める施工を行いました。', image: '/images/base-roof-sheet-metal/work1.jpg' },
+    { title: '雨樋・板金の補修', area: '対応エリア内', period: '施工期間：1〜3日間', description: '破損箇所を確認し、雨水を適切に流せるよう補修しました。', image: '/images/base-roof-sheet-metal/work2.jpg' },
+  ],
+  recruit: {
+    title: '住まいを守る屋根・板金スタッフを募集しています',
+    catch: '未経験でも、手に職をつけたい方・誠実に向き合える方を歓迎します。',
+    jobs: ['屋根工事スタッフ', '板金スタッフ', '現場アシスタント'],
+    points: ['現場で技術が身につく', '住まいを守るやりがい', '経験者は即戦力として優遇', '未経験者も基礎からサポート'],
+    message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
+    applyUrl: '',
+    image: '/images/base-roof-sheet-metal/recruit.jpg',
+    subImage: '/images/base-roof-sheet-metal/work3.jpg',
+  },
+};

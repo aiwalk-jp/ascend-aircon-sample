@@ -1,0 +1,54 @@
+import type { SiteData } from '../types';
+
+// 業種ベース：遺品整理（仮会社「サンプル遺品整理サービス」）
+export const baseRelics: SiteData = {
+  slug: 'base-relics',
+  logoText: 'S',
+  theme: { primary: '#1f2a44', secondary: '#4b5563', accent: '#cbb994' },
+  name: 'サンプル遺品整理サービス',
+  subName: '心を込めて対応する遺品整理・生前整理',
+  tagline: '大切な想いに寄り添う、\n遺品整理を。',
+  lead: '遺品整理・生前整理から、不用品の分別・買取・清掃まで。ご遺族のお気持ちに配慮し、丁寧に対応いたします。',
+  description: 'ご遺族に代わり、故人の品を心を込めて整理いたします。仕分け・搬出・清掃まで一貫して対応し、ご負担を軽減します。',
+  area: '地域密着で対応',
+  areaNote: '地域のお客様に真心を込めて対応します',
+  tel: '000-0000-0000',
+  hours: 'お電話でお気軽にご相談ください',
+  address: '〒000-0000 ○○県○○市○○ 1-2-3',
+  mapUrl: 'https://www.google.com/maps',
+  heroImage: '/images/base-relics/hero.jpg',
+  stats: [
+    { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
+    { label: '対応範囲', value: '仕分け〜清掃', note: '搬出・買取まで一貫対応' },
+    { label: '相談方法', value: '見積り無料', note: 'まずはお気軽にご相談を' },
+    { label: '対応姿勢', value: '真心対応', note: 'お気持ちに配慮した作業' },
+  ],
+  services: [
+    { name: '遺品整理', label: 'RELICS', text: '故人の品を丁寧に仕分けし、ご遺族のご意向に沿って整理いたします。', image: '/images/base-relics/work1.jpg' },
+    { name: '生前整理', label: 'PRE-ORGANIZE', text: 'ご本人・ご家族と相談しながら、身のまわりの整理をお手伝いします。', image: '/images/base-relics/work2.jpg' },
+    { name: '不用品の分別・搬出', label: 'SORTING', text: '残す物・処分する物を分別し、搬出まで責任を持って対応します。', image: '/images/base-relics/work3.jpg' },
+    { name: '買取・リユース', label: 'REUSE', text: '再利用できる品は買取・リユースにより、ご負担軽減につなげます。', image: '/images/base-relics/work1.jpg' },
+    { name: '室内清掃', label: 'CLEANING', text: '整理後のお部屋の清掃まで対応し、きれいな状態でお引き渡しします。', image: '/images/base-relics/work2.jpg' },
+    { name: '特殊清掃のご相談', label: 'SPECIAL', text: '状況に応じた特殊清掃のご相談にも、まずはお気軽にお問い合わせください。', image: '/images/base-relics/work3.jpg' },
+  ],
+  strengths: [
+    { title: 'お気持ちに寄り添う対応', text: 'ご遺族のお気持ちに配慮し、心を込めて丁寧に作業いたします。', label: 'SINCERE' },
+    { title: '仕分けから清掃まで一貫対応', text: '整理・搬出・清掃までまとめて対応し、ご負担を軽減します。', label: 'ONE STOP' },
+    { title: '分かりやすい料金とご説明', text: '作業前に内容と料金を明確にご説明し、安心してご依頼いただけます。', label: 'CLEAR' },
+  ],
+  flow: ['お問い合わせ', '現地確認・ヒアリング', 'お見積り・ご提案', 'ご契約', '整理・搬出・清掃', '完了確認'],
+  works: [
+    { title: '遺品整理・お部屋の整理', area: '対応エリア内', period: '作業期間：1〜2日', description: '品物を丁寧に仕分けし、ご遺族のご意向に沿って整理いたしました。', image: '/images/base-relics/work1.jpg' },
+    { title: '生前整理のお手伝い', area: '対応エリア内', period: '作業期間：1日', description: 'ご本人と相談しながら、身のまわりの整理をお手伝いしました。', image: '/images/base-relics/work2.jpg' },
+  ],
+  recruit: {
+    title: 'お気持ちに寄り添えるスタッフを募集しています',
+    catch: '人に寄り添う仕事に、誠実に向き合える方を歓迎します。',
+    jobs: ['整理スタッフ', '搬出・清掃スタッフ', '受付・見積り対応'],
+    points: ['人の役に立つ仕事', '丁寧に技術を習得できる', '経験者は優遇', '未経験者も基礎からサポート'],
+    message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
+    applyUrl: '',
+    image: '/images/base-relics/recruit.jpg',
+    subImage: '/images/base-relics/work3.jpg',
+  },
+};
