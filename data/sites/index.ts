@@ -2,7 +2,7 @@ import type { SiteData } from '../types';
 import { ascend } from './ascend';
 
 // ここに会社データを1行追加するだけで /demo/<slug> が増える。
-// 例: import { flumen } from './flumen'; を上に追加し、下の配列に flumen を足す。
+// 例: import { flumen } from './flumen'; を上に足し、下の配列に flumen を追加。
 const siteList: SiteData[] = [ascend];
 
 /** slug をキーにした会社データの辞書 */
@@ -15,7 +15,7 @@ export function getSite(slug: string): SiteData | undefined {
   return sites[slug];
 }
 
-/** 全会社データ（トップページの一覧などで使用） */
+/** 全会社データ（トップのデモ一覧などで使用） */
 export function getAllSites(): SiteData[] {
   return siteList;
 }

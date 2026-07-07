@@ -1,36 +1,43 @@
 # HP Demo Site
 
 Aiwalk「業種別HP制作サービス」の営業サンプル用デモサイトです。
-1つの Vercel プロジェクトで、複数企業のHPサンプルを **デモ専用URL** で表示します。
+デザインの正本は社内標準テンプレート **trade-hp-template-v12** で、その見た目・余白・構成を
+そのまま維持したまま、1つの Vercel プロジェクトで複数企業を **デモ専用URL** で出し分けます。
 
 - `/` … デモ一覧
-- `/demo/ascend` … ASCEND向けサンプル
+- `/demo/ascend` … ASCEND向けサンプル（TOP）
+- `/demo/ascend/service` … 事業紹介
+- `/demo/ascend/recruit` … 採用情報
 - `/demo/<slug>` … 会社ごとに追加可能（存在しない slug は 404）
 
 ## 技術構成
 
-- Next.js 15（App Router）+ TypeScript
+- Next.js 15（App Router）+ React 19 + TypeScript
+- Tailwind CSS 3.4（テンプレートと同一のスタイル基盤）
 - 会社データは `data/sites/<slug>.ts` に1社1ファイルで分離
-- 共通テンプレート `components/DemoSite.tsx` が全社のデザインを担当
-- 画像・セクションが無くても崩れない設計（プレースホルダー／空配列は自動で非表示）
+- 共通コンポーネント（Header / Footer / PhotoFrame）に会社データを prop で渡して描画
+- 画像が無くても崩れない（ヒーローはダークグラデーション、写真枠はプレースホルダー表示）
 
 ## ディレクトリ
 
 ```
 app/
-  layout.tsx            … 全体レイアウト
-  page.tsx              … デモ一覧（トップ）
-  not-found.tsx         … 404
-  demo/[slug]/page.tsx  … slug からデータを読み込み描画
+  layout.tsx                     … 全体レイアウト
+  page.tsx                       … デモ一覧（トップ）
+  not-found.tsx                  … 404
+  globals.css                    … Tailwind + テンプレート共通スタイル
+  demo/[slug]/page.tsx           … TOP（ヒーロー/実績/サービス/流れ/問い合わせ）
+  demo/[slug]/service/page.tsx   … 事業紹介
+  demo/[slug]/recruit/page.tsx   … 採用情報
 components/
-  DemoSite.tsx          … 工事業向け高品質テンプレート本体
+  Header.tsx / Footer.tsx        … 会社データを prop で受け取る
+  PhotoFrame.tsx                 … 写真枠（src 未指定ならプレースホルダー）
 data/
-  types.ts              … SiteData 型定義
-  sites/
-    index.ts            … 会社データのレジストリ（getSite / getAllSites）
-    ascend.ts           … ASCEND のデータ
-lib/
-  format.ts             … 電話番号を tel: リンク用に整形
+  types.ts                       … SiteData 型定義
+  sites/index.ts                 … 会社データのレジストリ（getSite / getAllSites）
+  sites/ascend.ts                … ASCEND のデータ
+lib/grid.ts                      … カード枚数に応じた整列クラス補助
+tailwind.config.ts / postcss.config.js
 ```
 
 ## ローカル確認
@@ -51,24 +58,31 @@ npm run build   # 本番ビルド確認
    import type { SiteData } from '../types';
 
    export const flumen: SiteData = {
-     slug: 'flumen',              // URL の /demo/<slug> と一致させる
-     companyName: '株式会社フルメン',
-     businessType: '外構・エクステリア工事',
-     catchcopy: '...',
+     slug: 'flumen',            // URL の /demo/<slug> と一致させる
+     logoText: 'F',             // ヘッダーロゴの1文字
+     name: '株式会社フルメン',
+     subName: '栃木県全域対応の外壁塗装・防水工事',
+     tagline: '地域の住まいを、\n誠実な施工で支える。',  // \n で改行
      lead: '...',
-     subText: '...',
-     area: '...',
-     phone: '000-0000-0000',
+     description: '...',
+     area: '栃木県全域対応',
+     areaNote: '宇都宮市を中心に迅速対応いたします',
+     tel: '028-000-0000',
+     hours: '受付時間 9:00〜18:00',
      address: '...',
-     googleMapUrl: 'https://www.google.com/maps/...',
-     // indeedUrl: 'https://jp.indeed.com/...',   // あれば採用CTAがIndeedへ、無ければ電話へ
-     colors: { primary: '#0f2f35', secondary: '#14263d', accent: '#c6a15b', bg: '#f6f2ea' },
-     // heroImage: 'https://...',   // 無ければグラデーションのプレースホルダー
-     services:  [{ title: '...', text: '...' }],
-     strengths: [{ title: '...', text: '...' }],
-     works:     [{ title: '...', text: '...' /*, image: 'https://...' */ }],
-     flow:      [{ title: '...', text: '...' }],
-     recruit:   [{ title: '...', text: '...' }],
+     mapUrl: 'https://www.google.com/maps/...',
+     // heroImage: '/images/flumen-hero.jpg',  // 無ければダークグラデーション
+     stats:     [{ label: '...', value: '...', note: '...' }],
+     services:  [{ name: '...', label: 'PAINT', text: '...' }],
+     strengths: [{ title: '...', text: '...', label: 'LOCAL SPEED' }],
+     flow:      ['お問い合わせ', '現地調査', 'お見積り', 'ご契約', '施工', '完了確認'],
+     works:     [{ title: '...', area: '...', period: '施工期間：14日間', description: '...' }],
+     recruit: {
+       title: '...', catch: '...',
+       jobs:   ['...'], points: ['...'],
+       message: '...',
+       applyUrl: '',            // Indeed等のURLを入れると応募ボタンがそこへ遷移
+     },
    };
    ```
 
@@ -94,14 +108,14 @@ npm run build   # 本番ビルド確認
 ## データ仕様のポイント（崩れない設計）
 
 - **空配列のセクションは自動で非表示**（例: `works: []` なら施工事例セクションが消える）。
-- サービス・強み・施工事例・流れは **件数が1つでも複数でも中央寄せで崩れない**。
-- `heroImage` / `works[].image` は **任意**。未指定ならグラデーション＋会社イニシャルのプレースホルダー。
-- `indeedUrl` があれば採用CTAは Indeed へ、無ければ電話（tel:）へ自動で切り替わる。
-- `colors` で会社ごとに配色変更（基本は 深緑 `primary` / 濃紺 `secondary` / ゴールド `accent`）。
-- `googleMapUrl` はヒーロー・お問い合わせ・フッターの各導線に反映される。
+- サービス・強み・流れ・実績は **件数が変わっても自然に整列**（1〜6件程度を想定）。
+- `heroImage` は任意。未指定ならヒーロー背景はダークグラデーション。
+- 施工事例・サービス詳細などの写真枠は、画像未挿入なら「ここに写真を挿入」プレースホルダー表示。
+- `recruit.applyUrl` があれば応募ボタンは Indeed等へ、無ければページ内の応募案内へ遷移。
+- `mapUrl` はヒーロー・お問い合わせ・フッターの各Googleマップ導線に反映される。
 
 ## セキュリティ補足
 
-`next@15.3.9`（15.3系の最新パッチ）を使用。`npm audit` には画像最適化・ミドルウェア関連の
+`next@15.3.9`（15.3系の最新パッチ）を使用。`npm audit` に画像最適化・middleware関連の
 advisory が残るが、本デモは `next/image`・middleware・画像最適化を使わないため実影響は低い。
 より厳密に解消する場合は Next.js 16 系へのアップグレードを検討する。

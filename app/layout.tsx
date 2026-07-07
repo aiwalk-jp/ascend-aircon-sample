@@ -1,11 +1,8 @@
-import type { Metadata } from 'next';
 import './globals.css';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: {
-    default: 'HPデモ一覧 | Aiwalk 業種別HP制作サービス',
-    template: '%s',
-  },
+  title: 'HPデモ一覧 | Aiwalk 業種別HP制作サービス',
   description: 'Aiwalk 業種別HP制作サービスのデモサイトです。',
 };
 
