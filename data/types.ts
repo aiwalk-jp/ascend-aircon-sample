@@ -3,7 +3,7 @@
 // 企業別URL（/demo/<slug>）で出し分けできるよう slug 等を追加している。
 
 export type Stat = { label: string; value: string; note: string };
-export type Service = { name: string; label: string; text: string };
+export type Service = { name: string; label: string; text: string; image?: string };
 export type Strength = { title: string; text: string; label: string };
 export type Work = { title: string; area: string; period: string; description: string; image?: string };
 

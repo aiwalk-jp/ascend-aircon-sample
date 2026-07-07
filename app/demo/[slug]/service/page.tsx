@@ -51,7 +51,7 @@ export default async function ServicePage({ params }: Props) {
               {site.services.map((s) => (
                 <div key={s.name} className="lux-card-strong h-full overflow-hidden rounded-[2rem] transition hover:-translate-y-1">
                   <div className="grid h-full min-h-[340px] items-stretch gap-0 lg:grid-cols-[.82fr_1fr]">
-                    <PhotoFrame label={`${s.name}の施工写真`} className="h-full min-h-[320px] rounded-none border-0 shadow-none" />
+                    <PhotoFrame label={`${s.name}の施工写真`} src={s.image} className="h-full min-h-[320px] rounded-none border-0 shadow-none" />
                     <div className="p-8">
                       <p className="text-[11px] font-black tracking-[.20em] text-teal-700">{s.label}</p>
                       <h2 className="mt-3 text-3xl font-black">{s.name}</h2>

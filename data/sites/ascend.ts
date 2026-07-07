@@ -26,12 +26,12 @@ export const ascend: SiteData = {
     { label: '対応スピード', value: '迅速対応', note: '急ぎの工事もまずはご相談ください' },
   ],
   services: [
-    { name: 'エアコン取付', label: 'INSTALL', text: '新規のエアコン取付に対応します。設置場所や配管ルートを確認し、住まいに合わせて丁寧に施工します。' },
-    { name: 'エアコン交換・入替', label: 'REPLACE', text: '古いエアコンの撤去から新しい機器の設置まで、入替工事を一括で対応します。' },
-    { name: 'エアコン移設', label: 'RELOCATE', text: '引っ越しやレイアウト変更に伴うエアコンの取り外し・再設置に対応します。' },
-    { name: '業務用空調工事', label: 'AC SYSTEM', text: '店舗・事務所などの業務用エアコン・空調設備の工事に対応します。' },
-    { name: 'クリーニング・メンテナンス', label: 'MAINTENANCE', text: '効きが悪い・異音がするなど、日常のメンテナンスやクリーニングもご相談ください。' },
-    { name: '修理・不具合対応', label: 'REPAIR', text: 'エアコンの不具合やトラブルについて、現地確認のうえ対応方法をご提案します。' },
+    { name: 'エアコン取付', label: 'INSTALL', text: '新規のエアコン取付に対応します。設置場所や配管ルートを確認し、住まいに合わせて丁寧に施工します。', image: '/images/ascend/work1.jpg' },
+    { name: 'エアコン交換・入替', label: 'REPLACE', text: '古いエアコンの撤去から新しい機器の設置まで、入替工事を一括で対応します。', image: '/images/ascend/work2.jpg' },
+    { name: 'エアコン移設', label: 'RELOCATE', text: '引っ越しやレイアウト変更に伴うエアコンの取り外し・再設置に対応します。', image: '/images/ascend/work4.jpg' },
+    { name: '業務用空調工事', label: 'AC SYSTEM', text: '店舗・事務所などの業務用エアコン・空調設備の工事に対応します。', image: '/images/ascend/work3.jpg' },
+    { name: 'クリーニング・メンテナンス', label: 'MAINTENANCE', text: '効きが悪い・異音がするなど、日常のメンテナンスやクリーニングもご相談ください。', image: '/images/ascend/work1.jpg' },
+    { name: '修理・不具合対応', label: 'REPAIR', text: 'エアコンの不具合やトラブルについて、現地確認のうえ対応方法をご提案します。', image: '/images/ascend/work2.jpg' },
   ],
   strengths: [
     { title: '地域密着のスピード対応', text: '清瀬市周辺を中心に、急ぎのご相談にもできる限り迅速に対応します。', label: 'LOCAL SPEED' },
