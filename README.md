@@ -106,8 +106,13 @@ node scripts/new-company.mjs \
 ```
 
 このスクリプトが自動で行うこと：
-1. `data/sites/<slug>.ts` を生成（`slug` / `logoText` / `name` / `subName` / `tel` / `address` / `mapUrl` / `area` を差し替え、他は業種ベースのまま）
-2. `data/sites/index.ts` に import + 配列登録を追記
+1. `data/sites/<slug>.ts` を生成（`slug` / `logoText` / `name` / `subName` / `tel` / `address` / `mapUrl` / `area` を差し替え）
+2. **「その会社用に作った感」の軽い最適化**（営業用途）
+   - ① キャッチコピー（ヒーロー見出し）に**対応エリアだけ反映**（業種の言い回しは維持。例：`宇都宮市周辺の外壁塗装・防水を、／誠実な施工で。`）
+   - ② 対応エリア表記を統一（ヒーローpill・エリアカード・カードの一言 areaNote）
+   - ③ 会社名を**自然に1箇所だけ**差し込み（説明文の主語。ヘッダー/フッターには元々表示）
+   - ※上記以外（構成・デザイン・業種文言）は一切変更しない
+3. `data/sites/index.ts` に import + 配列登録を追記
 
 ### 生成後の運用
 

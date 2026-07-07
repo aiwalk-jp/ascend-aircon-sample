@@ -89,6 +89,51 @@ if (indeed) {
   src = src.replace(/(\n\s*)applyUrl: '(?:[^'\\]|\\.)*',/, `$1applyUrl: '${q(indeed)}',`);
 }
 
+// ==== 営業用の軽い個社最適化（「その会社用に作った感」を出す） ====
+// 対応エリアから地名部分を抽出（都道府県プレフィクスと「対応」等を除去）
+function deriveRegion(a) {
+  return String(a)
+    .replace(/^(東京都|北海道|大阪府|京都府|.{2,3}県)/, '')
+    .replace(/(に対応|対応|エリア対応|エリア)$/, '')
+    .replace(/'/g, '')
+    .trim();
+}
+const region = deriveRegion(area);
+const regionValid = /[市区町村]|周辺/.test(region);
+
+// ① キャッチコピー（ヒーロー見出し）に「対応エリア」だけ反映（業種の言い回しは維持）
+//    \n は2行見出し。region が地名として妥当なときのみ差し替え、それ以外は base のまま。
+const TAGLINE = {
+  'base-aircon': (r) => `${r}のエアコン工事を、\\n迅速・丁寧に。`,
+  'base-car-coating': (r) => `${r}で愛車の輝きを、\\n長く美しく守る。`,
+  'base-house-cleaning': (r) => `${r}の暮らしの汚れを、\\nすっきり解決。`,
+  'base-relics': (r) => `${r}で大切な想いに寄り添う、\\n遺品整理を。`,
+  'base-roof-sheet-metal': (r) => `${r}の住まいを雨風から守る、\\n確かな屋根工事。`,
+  'base-demolition': (r) => `${r}の解体工事を、\\n安全・丁寧に。`,
+  'base-exterior': (r) => `${r}の住まいの外まわりを、\\n美しくデザイン。`,
+  'base-painting': (r) => `${r}の外壁塗装・防水を、\\n誠実な施工で。`,
+  'base-waterworks': (r) => `${r}の水まわりを、\\n安心しておまかせ。`,
+  'base-garden': (r) => `${r}の心地よい庭を、\\n美しく保つ。`,
+  'base-electric': (r) => `${r}の電気工事を、\\n安全・確実に。`,
+  'base-interior-cross': (r) => `${r}の空間の印象を変える、\\n内装リフォーム。`,
+  'base-junk-removal': (r) => `${r}の不用品の片付けを、\\nまるごとおまかせ。`,
+  'base-waterproof': (r) => `${r}の建物を雨水から守る、\\n確かな防水工事。`,
+};
+if (regionValid && TAGLINE[base]) {
+  src = src.replace(/^  tagline: '(?:[^'\\]|\\.)*',/m, `  tagline: '${TAGLINE[base](region)}',`);
+}
+
+// ② 対応エリア表記の統一：エリアカードの一言（areaNote）にも地名を反映
+if (regionValid) {
+  src = setField(src, 'areaNote', `${region}のお客様へ迅速に対応いたします`);
+}
+
+// ③ 会社名を自然に1箇所だけ差し込み（説明文の主語に。ヘッダー/フッターには元々表示される）
+const dm = src.match(/^  description: '((?:[^'\\]|\\.)*)',/m);
+if (dm && !dm[1].startsWith(name)) {
+  src = src.replace(/^  description: '(?:[^'\\]|\\.)*',/m, `  description: '${q(name)}は、${dm[1]}',`);
+}
+
 // 先頭コメントを個社向けに
 src = src.replace(/^\/\/[^\n]*\n(\/\/[^\n]*\n)?/, `// 個社サンプル：${name}（base: ${base}）\n`);
 
