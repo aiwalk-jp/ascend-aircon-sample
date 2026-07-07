@@ -5,7 +5,7 @@
 export type Stat = { label: string; value: string; note: string };
 export type Service = { name: string; label: string; text: string };
 export type Strength = { title: string; text: string; label: string };
-export type Work = { title: string; area: string; period: string; description: string };
+export type Work = { title: string; area: string; period: string; description: string; image?: string };
 
 export type Recruit = {
   title: string;
@@ -15,6 +15,8 @@ export type Recruit = {
   message: string;
   /** Indeed等の求人URL。設定すると応募ボタンの遷移先を差し替え。空文字ならページ内案内へ */
   applyUrl: string;
+  /** 採用ページの写真URL。未指定なら写真枠プレースホルダー表示 */
+  image?: string;
 };
 
 export type SiteData = {

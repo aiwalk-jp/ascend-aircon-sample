@@ -46,7 +46,7 @@ export default async function RecruitPage({ params }: Props) {
               <p className="mt-4 text-lg leading-9 text-slate-200">{site.recruit.catch}</p>
               <a href={site.recruit.applyUrl || '#recruit-contact'} target={site.recruit.applyUrl ? '_blank' : undefined} rel={site.recruit.applyUrl ? 'noreferrer' : undefined} className="mt-8 inline-flex rounded-2xl bg-white px-8 py-4 font-black text-teal-900 shadow-xl">応募・相談する</a>
             </div>
-            <PhotoFrame label="スタッフ写真・現場作業風景を挿入" tone="dark" className="h-[260px] rounded-[2rem] md:h-[280px]" />
+            <PhotoFrame label="スタッフ写真・現場作業風景を挿入" tone="dark" src={site.recruit.image} className="h-[260px] rounded-[2rem] md:h-[280px]" />
           </div>
         </section>
         <section className="container-x py-14">
@@ -74,7 +74,7 @@ export default async function RecruitPage({ params }: Props) {
                     <p className="mt-4 text-xl font-black leading-snug">{point}</p>
                   </div>
                 ))}
-                <PhotoFrame label="職場の雰囲気・スタッフ写真" className={points.length === 1 ? 'rounded-[1.7rem]' : 'sm:col-span-2 rounded-[1.7rem]'} />
+                <PhotoFrame label="職場の雰囲気・スタッフ写真" src={site.recruit.image} className={points.length === 1 ? 'rounded-[1.7rem]' : 'sm:col-span-2 rounded-[1.7rem]'} />
               </div>
             )}
           </div>

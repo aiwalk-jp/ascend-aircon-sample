@@ -42,7 +42,7 @@ export default async function ServicePage({ params }: Props) {
               <h1 className="mt-4 text-5xl font-black">事業紹介</h1>
               <p className="mt-5 text-lg leading-9 text-slate-200">住まい・店舗の状況に合わせて、現地確認・提案・施工・アフターまで対応します。</p>
             </div>
-            <PhotoFrame label="施工中・現地確認・スタッフ写真を挿入" tone="dark" className="h-[260px] rounded-[2rem] md:h-[280px]" />
+            <PhotoFrame label="施工中・現地確認・スタッフ写真を挿入" tone="dark" src={site.heroImage} className="h-[260px] rounded-[2rem] md:h-[280px]" />
           </div>
         </section>
         <section className="container-x py-14">

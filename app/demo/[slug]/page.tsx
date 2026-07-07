@@ -139,7 +139,7 @@ export default async function Home({ params }: Props) {
                     <div className={`grid gap-5 ${gridClass(site.works.length, 2)}`}>
                       {site.works.map((w) => (
                         <article key={`${w.title}-${w.area}`} className="flex h-full flex-col overflow-hidden rounded-2xl bg-white/8 p-3 ring-1 ring-white/10">
-                          <PhotoFrame label={`${w.title}の施工前後写真`} tone="dark" className="min-h-[200px] rounded-xl border-white/10 shadow-none" />
+                          <PhotoFrame label={`${w.title}の施工前後写真`} tone="dark" src={w.image} className="min-h-[200px] rounded-xl border-white/10 shadow-none" />
                           <div className="flex flex-1 flex-col p-3">
                             <p className="text-lg font-black">{w.title}（{w.area}）</p>
                             {w.description && <p className="mt-3 flex-1 rounded-2xl bg-white/8 p-4 text-sm font-bold leading-7 text-slate-200 ring-1 ring-white/10">{w.description}</p>}

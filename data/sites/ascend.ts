@@ -14,12 +14,11 @@ export const ascend: SiteData = {
   areaNote: '東京都内を中心に迅速対応いたします',
   tel: '080-5961-0206',
   hours: 'お電話でお気軽にご相談ください',
-  address: '東京都清瀬市',
+  address: '〒204-0001 東京都清瀬市下宿３丁目',
   mapUrl:
     'https://www.google.com/maps/place/ASCEND/@35.8031658,139.5419979,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e9e26ad24295:0xecd0e6dba5af6c30!8m2!3d35.8031658!4d139.5419979!16s%2Fg%2F11z56fqrpr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D',
-  // ヒーロー背景画像（デモ用の仮写真。ASCENDの実写真が用意でき次第このパスを差し替える）。
-  // 未設定にするとダークグラデーションにフォールバックし、見栄えは崩れない。
-  heroImage: '/images/hero-demo.jpg',
+  // ヒーロー背景画像。未設定にするとダークグラデーションにフォールバックし、見栄えは崩れない。
+  heroImage: '/images/ascend/hero.jpg',
   stats: [
     { label: '対応エリア', value: '清瀬市周辺', note: '東京都内を中心に迅速対応' },
     { label: '対応内容', value: '取付〜メンテ', note: '家庭用・業務用エアコンに対応' },
@@ -41,8 +40,10 @@ export const ascend: SiteData = {
   ],
   flow: ['お問い合わせ', '現地確認・ヒアリング', 'お見積り・ご提案', '施工日の調整', '施工', '完了確認・アフター'],
   works: [
-    { title: '家庭用エアコン取付', area: '清瀬市', period: '施工時間：半日〜1日', description: '設置場所と配管ルートを確認し、室内外の見た目にも配慮して取付を行いました。' },
-    { title: 'エアコン入替工事', area: '東京都内', period: '施工時間：1日', description: '既存機器の撤去から新規設置まで、当日中に入替対応を行いました。' },
+    { title: '家庭用エアコン取付', area: '清瀬市', period: '施工時間：半日〜1日', description: '設置場所と配管ルートを確認し、室内外の見た目にも配慮して取付を行いました。', image: '/images/ascend/work1.jpg' },
+    { title: 'エアコン入替工事', area: '東京都内', period: '施工時間：1日', description: '既存機器の撤去から新規設置まで、当日中に入替対応を行いました。', image: '/images/ascend/work2.jpg' },
+    { title: '業務用エアコン設置', area: '東京都内', period: '施工時間：1〜2日', description: '店舗・事務所の業務用空調について、現場に合わせて設置工事を行いました。', image: '/images/ascend/work3.jpg' },
+    { title: 'エアコン移設・再設置', area: '清瀬市周辺', period: '施工時間：半日', description: 'レイアウト変更に伴う取り外し・再設置に対応し、配管まわりも丁寧に仕上げました。', image: '/images/ascend/work4.jpg' },
   ],
   recruit: {
     title: '一緒に働く空調工事スタッフを募集しています',
@@ -52,5 +53,6 @@ export const ascend: SiteData = {
     message: 'まずは仕事内容を聞いてみたい、という相談からでも大丈夫です。',
     // Indeed等の求人URLがあれば設定。未設定の場合はページ内の応募案内へ移動します。
     applyUrl: '',
+    image: '/images/ascend/recruit.jpg',
   },
 };
