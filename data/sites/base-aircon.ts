@@ -20,6 +20,7 @@ export const baseAircon: SiteData = {
   contactTitle: 'エアコン・空調の気になること、まずはご相談ください。',
   contactDescription: '現地確認・お見積り・ご相談など、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-aircon/hero.jpg',
+  serviceHeroImage: '/images/base-aircon/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
     { label: '対応内容', value: '取付〜メンテ', note: '家庭用・業務用に対応' },
@@ -27,12 +28,12 @@ export const baseAircon: SiteData = {
     { label: '対応スピード', value: '迅速対応', note: '急ぎの工事もご相談ください' },
   ],
   services: [
-    { name: 'エアコン取付', label: 'INSTALL', text: '新規のエアコン取付に対応。設置場所や配管ルートを確認し、住まいに合わせて丁寧に施工します。', image: '/images/base-aircon/work1.jpg' },
-    { name: 'エアコン交換・入替', label: 'REPLACE', text: '古いエアコンの撤去から新しい機器の設置まで、入替工事を一括で対応します。', image: '/images/base-aircon/work2.jpg' },
-    { name: 'エアコン移設', label: 'RELOCATE', text: '引っ越しやレイアウト変更に伴うエアコンの取り外し・再設置に対応します。', image: '/images/base-aircon/work3.jpg' },
-    { name: '業務用空調工事', label: 'AC SYSTEM', text: '店舗・事務所などの業務用エアコン・空調設備の工事に対応します。', image: '/images/base-aircon/work1.jpg' },
-    { name: 'クリーニング・メンテナンス', label: 'MAINTENANCE', text: '効きが悪い・異音がするなど、日常のメンテナンスやクリーニングもご相談ください。', image: '/images/base-aircon/work2.jpg' },
-    { name: '修理・不具合対応', label: 'REPAIR', text: 'エアコンの不具合やトラブルについて、現地確認のうえ対応方法をご提案します。', image: '/images/base-aircon/work3.jpg' },
+    { name: 'エアコン取付', label: 'INSTALL', text: '新規のエアコン取付に対応。設置場所や配管ルートを確認し、住まいに合わせて丁寧に施工します。', image: '/images/base-aircon/svc1.jpg' },
+    { name: 'エアコン交換・入替', label: 'REPLACE', text: '古いエアコンの撤去から新しい機器の設置まで、入替工事を一括で対応します。', image: '/images/base-aircon/svc2.jpg' },
+    { name: 'エアコン移設', label: 'RELOCATE', text: '引っ越しやレイアウト変更に伴うエアコンの取り外し・再設置に対応します。', image: '/images/base-aircon/svc3.jpg' },
+    { name: '業務用空調工事', label: 'AC SYSTEM', text: '店舗・事務所などの業務用エアコン・空調設備の工事に対応します。', image: '/images/base-aircon/svc4.jpg' },
+    { name: 'クリーニング・メンテナンス', label: 'MAINTENANCE', text: '効きが悪い・異音がするなど、日常のメンテナンスやクリーニングもご相談ください。', image: '/images/base-aircon/svc5.jpg' },
+    { name: '修理・不具合対応', label: 'REPAIR', text: 'エアコンの不具合やトラブルについて、現地確認のうえ対応方法をご提案します。', image: '/images/base-aircon/svc6.jpg' },
   ],
   strengths: [
     { title: '地域密着のスピード対応', text: '地域を中心に、急ぎのご相談にもできる限り迅速に対応します。', label: 'LOCAL SPEED' },

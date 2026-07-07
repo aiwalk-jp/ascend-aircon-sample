@@ -19,6 +19,7 @@ export const baseWaterworks: SiteData = {
   contactTitle: '水まわり・給排水設備のこと、まずはご相談ください。',
   contactDescription: '水まわりのトラブル・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-waterworks/hero.jpg',
+  serviceHeroImage: '/images/base-waterworks/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
     { label: '対応内容', value: '修理〜工事', note: '水漏れ〜設備入替まで' },
@@ -26,12 +27,12 @@ export const baseWaterworks: SiteData = {
     { label: '対応スピード', value: '迅速対応', note: '水まわりの困りごとに対応' },
   ],
   services: [
-    { name: '水漏れ・つまり修理', label: 'REPAIR', text: '蛇口やトイレの水漏れ・つまりなど、日常のトラブルに迅速に対応します。', image: '/images/base-waterworks/work1.jpg' },
-    { name: '給水・給湯工事', label: 'SUPPLY', text: '給水・給湯管の工事や交換に対応し、安定した水まわりを保ちます。', image: '/images/base-waterworks/work2.jpg' },
-    { name: '排水管工事', label: 'DRAIN', text: '排水管の詰まり解消や交換工事に対応し、快適な排水環境を整えます。', image: '/images/base-waterworks/work3.jpg' },
-    { name: '蛇口・水栓交換', label: 'FAUCET', text: '古くなった蛇口や水栓の交換を、住まいに合わせて行います。', image: '/images/base-waterworks/work1.jpg' },
-    { name: 'トイレ・洗面設備', label: 'SANITARY', text: 'トイレ・洗面台などの設備の交換・設置に対応します。', image: '/images/base-waterworks/work2.jpg' },
-    { name: '水まわりリフォーム', label: 'REFORM', text: 'キッチン・浴室など、水まわり全体のリフォームもご相談ください。', image: '/images/base-waterworks/work3.jpg' },
+    { name: '水漏れ・つまり修理', label: 'REPAIR', text: '蛇口やトイレの水漏れ・つまりなど、日常のトラブルに迅速に対応します。', image: '/images/base-waterworks/svc1.jpg' },
+    { name: '給水・給湯工事', label: 'SUPPLY', text: '給水・給湯管の工事や交換に対応し、安定した水まわりを保ちます。', image: '/images/base-waterworks/svc2.jpg' },
+    { name: '排水管工事', label: 'DRAIN', text: '排水管の詰まり解消や交換工事に対応し、快適な排水環境を整えます。', image: '/images/base-waterworks/svc3.jpg' },
+    { name: '蛇口・水栓交換', label: 'FAUCET', text: '古くなった蛇口や水栓の交換を、住まいに合わせて行います。', image: '/images/base-waterworks/svc4.jpg' },
+    { name: 'トイレ・洗面設備', label: 'SANITARY', text: 'トイレ・洗面台などの設備の交換・設置に対応します。', image: '/images/base-waterworks/svc5.jpg' },
+    { name: '水まわりリフォーム', label: 'REFORM', text: 'キッチン・浴室など、水まわり全体のリフォームもご相談ください。', image: '/images/base-waterworks/svc6.jpg' },
   ],
   strengths: [
     { title: '急ぎのトラブルにも迅速対応', text: '水漏れ・つまりなど、お困りのトラブルにできる限り迅速に対応します。', label: 'FAST' },

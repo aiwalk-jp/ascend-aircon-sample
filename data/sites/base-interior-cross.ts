@@ -19,6 +19,7 @@ export const baseInteriorCross: SiteData = {
   contactTitle: '内装・クロス張り替えのこと、まずはご相談ください。',
   contactDescription: '現地確認・お見積り・ご相談など、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-interior-cross/hero.jpg',
+  serviceHeroImage: '/images/base-interior-cross/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
     { label: '対応範囲', value: 'クロス〜床', note: '内装リフォーム全般' },
@@ -26,12 +27,12 @@ export const baseInteriorCross: SiteData = {
     { label: '仕上がり', value: '丁寧仕上げ', note: '継ぎ目まで美しく施工' },
   ],
   services: [
-    { name: 'クロス張り替え', label: 'WALLPAPER', text: '壁紙の張り替えで、お部屋の印象を明るく一新します。', image: '/images/base-interior-cross/work1.jpg' },
-    { name: '床材・フローリング', label: 'FLOORING', text: 'フローリングやクッションフロアなど、床材の施工に対応します。', image: '/images/base-interior-cross/work2.jpg' },
-    { name: '内装リフォーム', label: 'RENEWAL', text: 'お部屋全体の内装リフォームで、住まいの空間を整えます。', image: '/images/base-interior-cross/work3.jpg' },
-    { name: '店舗内装工事', label: 'SHOP', text: '店舗・テナントの内装工事や、イメージづくりに対応します。', image: '/images/base-interior-cross/work1.jpg' },
-    { name: '原状回復工事', label: 'RESTORE', text: '退去に伴う原状回復工事にも、丁寧に対応します。', image: '/images/base-interior-cross/work2.jpg' },
-    { name: '部分補修のご相談', label: 'REPAIR', text: 'クロスの一部補修など、小さなご相談もお気軽にどうぞ。', image: '/images/base-interior-cross/work3.jpg' },
+    { name: 'クロス張り替え', label: 'WALLPAPER', text: '壁紙の張り替えで、お部屋の印象を明るく一新します。', image: '/images/base-interior-cross/svc1.jpg' },
+    { name: '床材・フローリング', label: 'FLOORING', text: 'フローリングやクッションフロアなど、床材の施工に対応します。', image: '/images/base-interior-cross/svc2.jpg' },
+    { name: '内装リフォーム', label: 'RENEWAL', text: 'お部屋全体の内装リフォームで、住まいの空間を整えます。', image: '/images/base-interior-cross/svc3.jpg' },
+    { name: '店舗内装工事', label: 'SHOP', text: '店舗・テナントの内装工事や、イメージづくりに対応します。', image: '/images/base-interior-cross/svc4.jpg' },
+    { name: '原状回復工事', label: 'RESTORE', text: '退去に伴う原状回復工事にも、丁寧に対応します。', image: '/images/base-interior-cross/svc5.jpg' },
+    { name: '部分補修のご相談', label: 'REPAIR', text: 'クロスの一部補修など、小さなご相談もお気軽にどうぞ。', image: '/images/base-interior-cross/svc6.jpg' },
   ],
   strengths: [
     { title: '継ぎ目まで美しい仕上がり', text: 'クロスや床の継ぎ目まで丁寧に仕上げ、美しい空間をつくります。', label: 'FINISH' },

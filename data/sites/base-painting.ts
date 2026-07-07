@@ -19,6 +19,7 @@ export const basePainting: SiteData = {
   contactTitle: '外壁塗装・防水工事のこと、まずはご相談ください。',
   contactDescription: '現地調査・お見積り・ご相談など、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-painting/hero.jpg',
+  serviceHeroImage: '/images/base-painting/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
     { label: '説明方針', value: '写真で共有', note: '劣化状況・施工内容を見える化' },
@@ -26,12 +27,12 @@ export const basePainting: SiteData = {
     { label: '相談方法', value: '電話相談OK', note: '小さな不安からご相談可能' },
   ],
   services: [
-    { name: '外壁塗装', label: 'PAINT', text: '外壁の色あせ・ひび割れ・チョーキングなどを確認し、住まいに合った塗装をご提案します。', image: '/images/base-painting/work1.jpg' },
-    { name: '屋根塗装', label: 'ROOF', text: '屋根材の劣化状況を確認し、防水性・耐久性を保つための塗装を行います。', image: '/images/base-painting/work2.jpg' },
-    { name: '防水工事', label: 'WATERPROOF', text: 'ベランダ・屋上・外部まわりの防水工事に対応し、雨水の侵入を防ぎます。', image: '/images/base-painting/work3.jpg' },
-    { name: '雨漏り対応', label: 'LEAK', text: '原因調査から補修まで、写真をもとに分かりやすくご説明します。', image: '/images/base-painting/work1.jpg' },
-    { name: '外壁・屋根リフォーム', label: 'REFORM', text: '塗装だけでなく、住まいの状態に応じた改修・補修にも対応します。', image: '/images/base-painting/work2.jpg' },
-    { name: '外まわり工事のご相談', label: 'SUPPORT', text: '住まいまわりの小規模な工事や補修もお気軽にご相談ください。', image: '/images/base-painting/work3.jpg' },
+    { name: '外壁塗装', label: 'PAINT', text: '外壁の色あせ・ひび割れ・チョーキングなどを確認し、住まいに合った塗装をご提案します。', image: '/images/base-painting/svc1.jpg' },
+    { name: '屋根塗装', label: 'ROOF', text: '屋根材の劣化状況を確認し、防水性・耐久性を保つための塗装を行います。', image: '/images/base-painting/svc2.jpg' },
+    { name: '防水工事', label: 'WATERPROOF', text: 'ベランダ・屋上・外部まわりの防水工事に対応し、雨水の侵入を防ぎます。', image: '/images/base-painting/svc3.jpg' },
+    { name: '雨漏り対応', label: 'LEAK', text: '原因調査から補修まで、写真をもとに分かりやすくご説明します。', image: '/images/base-painting/svc4.jpg' },
+    { name: '外壁・屋根リフォーム', label: 'REFORM', text: '塗装だけでなく、住まいの状態に応じた改修・補修にも対応します。', image: '/images/base-painting/svc5.jpg' },
+    { name: '外まわり工事のご相談', label: 'SUPPORT', text: '住まいまわりの小規模な工事や補修もお気軽にご相談ください。', image: '/images/base-painting/svc6.jpg' },
   ],
   strengths: [
     { title: '現地調査から施工後まで一貫対応', text: '調査・見積・施工・完了確認まで、責任を持って対応します。', label: 'ONE STOP' },

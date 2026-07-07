@@ -19,6 +19,7 @@ export const baseDemolition: SiteData = {
   contactTitle: '解体工事・空き家解体のこと、まずはご相談ください。',
   contactDescription: '現地調査・お見積り・ご相談など、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-demolition/hero.jpg',
+  serviceHeroImage: '/images/base-demolition/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
     { label: '対応範囲', value: '解体〜整地', note: '廃材処理まで一貫対応' },
@@ -26,12 +27,12 @@ export const baseDemolition: SiteData = {
     { label: '安全管理', value: '近隣配慮', note: '安全・養生を徹底' },
   ],
   services: [
-    { name: '家屋解体', label: 'HOUSE', text: '木造・軽量鉄骨などの家屋解体に対応。近隣に配慮して施工します。', image: '/images/base-demolition/work1.jpg' },
-    { name: '空き家解体', label: 'VACANT', text: '老朽化した空き家の解体・撤去を、安全管理を徹底して行います。', image: '/images/base-demolition/work2.jpg' },
-    { name: '内装解体', label: 'INTERIOR', text: '店舗・テナントの原状回復に伴う内装解体に対応します。', image: '/images/base-demolition/work3.jpg' },
-    { name: '整地・外構撤去', label: 'LEVELING', text: '解体後の整地や、ブロック塀・カーポートなどの撤去も対応します。', image: '/images/base-demolition/work1.jpg' },
-    { name: '廃材の分別・処理', label: 'DISPOSAL', text: '廃材を適正に分別・処理し、環境と法令に配慮して対応します。', image: '/images/base-demolition/work2.jpg' },
-    { name: '各種お手続きのご相談', label: 'SUPPORT', text: '解体に伴う各種お手続きについても、お気軽にご相談ください。', image: '/images/base-demolition/work3.jpg' },
+    { name: '家屋解体', label: 'HOUSE', text: '木造・軽量鉄骨などの家屋解体に対応。近隣に配慮して施工します。', image: '/images/base-demolition/svc1.jpg' },
+    { name: '空き家解体', label: 'VACANT', text: '老朽化した空き家の解体・撤去を、安全管理を徹底して行います。', image: '/images/base-demolition/svc2.jpg' },
+    { name: '内装解体', label: 'INTERIOR', text: '店舗・テナントの原状回復に伴う内装解体に対応します。', image: '/images/base-demolition/svc3.jpg' },
+    { name: '整地・外構撤去', label: 'LEVELING', text: '解体後の整地や、ブロック塀・カーポートなどの撤去も対応します。', image: '/images/base-demolition/svc4.jpg' },
+    { name: '廃材の分別・処理', label: 'DISPOSAL', text: '廃材を適正に分別・処理し、環境と法令に配慮して対応します。', image: '/images/base-demolition/svc5.jpg' },
+    { name: '各種お手続きのご相談', label: 'SUPPORT', text: '解体に伴う各種お手続きについても、お気軽にご相談ください。', image: '/images/base-demolition/svc6.jpg' },
   ],
   strengths: [
     { title: '近隣配慮と安全管理の徹底', text: '養生・散水・安全対策を徹底し、近隣に配慮して施工します。', label: 'SAFETY' },

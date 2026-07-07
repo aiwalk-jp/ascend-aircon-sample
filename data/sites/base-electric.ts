@@ -19,6 +19,7 @@ export const baseElectric: SiteData = {
   contactTitle: '電気工事・照明設備のこと、まずはご相談ください。',
   contactDescription: '工事のご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-electric/hero.jpg',
+  serviceHeroImage: '/images/base-electric/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
     { label: '対応範囲', value: '住宅〜店舗', note: '各種電気工事に対応' },
@@ -26,12 +27,12 @@ export const baseElectric: SiteData = {
     { label: '施工方針', value: '安全第一', note: '安全基準を守って施工' },
   ],
   services: [
-    { name: 'コンセント・スイッチ工事', label: 'OUTLET', text: 'コンセントの増設や位置変更、スイッチの交換に対応します。', image: '/images/base-electric/work1.jpg' },
-    { name: '照明・LED工事', label: 'LIGHTING', text: '照明器具の取付・交換やLED化で、明るく省エネな空間にします。', image: '/images/base-electric/work2.jpg' },
-    { name: '分電盤・ブレーカー', label: 'PANEL', text: '分電盤の交換やブレーカー増設で、安全な電気環境を整えます。', image: '/images/base-electric/work3.jpg' },
-    { name: 'エアコン電源工事', label: 'AC POWER', text: 'エアコン専用回路の増設など、電源まわりの工事に対応します。', image: '/images/base-electric/work1.jpg' },
-    { name: '店舗・事務所の電気設備', label: 'FACILITY', text: '店舗・事務所の電気設備工事や配線工事に対応します。', image: '/images/base-electric/work2.jpg' },
-    { name: '各種電気工事のご相談', label: 'SUPPORT', text: '電気にまつわる小さなお困りごとも、お気軽にご相談ください。', image: '/images/base-electric/work3.jpg' },
+    { name: 'コンセント・スイッチ工事', label: 'OUTLET', text: 'コンセントの増設や位置変更、スイッチの交換に対応します。', image: '/images/base-electric/svc1.jpg' },
+    { name: '照明・LED工事', label: 'LIGHTING', text: '照明器具の取付・交換やLED化で、明るく省エネな空間にします。', image: '/images/base-electric/svc2.jpg' },
+    { name: '分電盤・ブレーカー', label: 'PANEL', text: '分電盤の交換やブレーカー増設で、安全な電気環境を整えます。', image: '/images/base-electric/svc3.jpg' },
+    { name: 'エアコン電源工事', label: 'AC POWER', text: 'エアコン専用回路の増設など、電源まわりの工事に対応します。', image: '/images/base-electric/svc4.jpg' },
+    { name: '店舗・事務所の電気設備', label: 'FACILITY', text: '店舗・事務所の電気設備工事や配線工事に対応します。', image: '/images/base-electric/svc5.jpg' },
+    { name: '各種電気工事のご相談', label: 'SUPPORT', text: '電気にまつわる小さなお困りごとも、お気軽にご相談ください。', image: '/images/base-electric/svc6.jpg' },
   ],
   strengths: [
     { title: '安全を第一にした施工', text: '安全基準を守り、確実で丁寧な電気工事を行います。', label: 'SAFETY' },

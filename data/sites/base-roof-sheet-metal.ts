@@ -19,6 +19,7 @@ export const baseRoofSheetMetal: SiteData = {
   contactTitle: '屋根・雨樋・板金工事のこと、まずはご相談ください。',
   contactDescription: '現地調査・お見積り・ご相談など、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-roof-sheet-metal/hero.jpg',
+  serviceHeroImage: '/images/base-roof-sheet-metal/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
     { label: '対応範囲', value: '調査〜施工後', note: '雨漏り対応まで一貫' },
@@ -26,12 +27,12 @@ export const baseRoofSheetMetal: SiteData = {
     { label: '説明方針', value: '写真で共有', note: '劣化状況を見える化' },
   ],
   services: [
-    { name: '屋根葺き替え', label: 'RE-ROOF', text: '劣化した屋根材を新しくし、住まいの防水性・耐久性を高めます。', image: '/images/base-roof-sheet-metal/work1.jpg' },
-    { name: 'カバー工法', label: 'COVER', text: '既存屋根の上に新しい屋根材を重ね、費用を抑えて改修します。', image: '/images/base-roof-sheet-metal/work2.jpg' },
-    { name: '雨樋工事', label: 'GUTTER', text: '雨樋の詰まり・破損を確認し、交換・補修に対応します。', image: '/images/base-roof-sheet-metal/work3.jpg' },
-    { name: '板金工事', label: 'SHEET METAL', text: '棟板金や外壁板金など、建築板金の各種工事に対応します。', image: '/images/base-roof-sheet-metal/work1.jpg' },
-    { name: '雨漏り対応', label: 'LEAK', text: '原因を調査し、写真をもとに分かりやすくご説明して補修します。', image: '/images/base-roof-sheet-metal/work2.jpg' },
-    { name: '屋根点検・メンテナンス', label: 'INSPECTION', text: '定期的な点検やメンテナンスで、屋根を長持ちさせます。', image: '/images/base-roof-sheet-metal/work3.jpg' },
+    { name: '屋根葺き替え', label: 'RE-ROOF', text: '劣化した屋根材を新しくし、住まいの防水性・耐久性を高めます。', image: '/images/base-roof-sheet-metal/svc1.jpg' },
+    { name: 'カバー工法', label: 'COVER', text: '既存屋根の上に新しい屋根材を重ね、費用を抑えて改修します。', image: '/images/base-roof-sheet-metal/svc2.jpg' },
+    { name: '雨樋工事', label: 'GUTTER', text: '雨樋の詰まり・破損を確認し、交換・補修に対応します。', image: '/images/base-roof-sheet-metal/svc3.jpg' },
+    { name: '板金工事', label: 'SHEET METAL', text: '棟板金や外壁板金など、建築板金の各種工事に対応します。', image: '/images/base-roof-sheet-metal/svc4.jpg' },
+    { name: '雨漏り対応', label: 'LEAK', text: '原因を調査し、写真をもとに分かりやすくご説明して補修します。', image: '/images/base-roof-sheet-metal/svc5.jpg' },
+    { name: '屋根点検・メンテナンス', label: 'INSPECTION', text: '定期的な点検やメンテナンスで、屋根を長持ちさせます。', image: '/images/base-roof-sheet-metal/svc6.jpg' },
   ],
   strengths: [
     { title: '調査から施工後まで一貫対応', text: '調査・見積・施工・完了確認まで、責任を持って対応します。', label: 'ONE STOP' },

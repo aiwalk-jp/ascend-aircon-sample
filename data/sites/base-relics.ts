@@ -19,6 +19,7 @@ export const baseRelics: SiteData = {
   contactTitle: '遺品整理・片付けのこと、まずはご相談ください。',
   contactDescription: '整理のご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-relics/hero.jpg',
+  serviceHeroImage: '/images/base-relics/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
     { label: '対応範囲', value: '仕分け〜清掃', note: '搬出・買取まで一貫対応' },
@@ -26,12 +27,12 @@ export const baseRelics: SiteData = {
     { label: '対応姿勢', value: '真心対応', note: 'お気持ちに配慮した作業' },
   ],
   services: [
-    { name: '遺品整理', label: 'RELICS', text: '故人の品を丁寧に仕分けし、ご遺族のご意向に沿って整理いたします。', image: '/images/base-relics/work1.jpg' },
-    { name: '生前整理', label: 'PRE-ORGANIZE', text: 'ご本人・ご家族と相談しながら、身のまわりの整理をお手伝いします。', image: '/images/base-relics/work2.jpg' },
-    { name: '不用品の分別・搬出', label: 'SORTING', text: '残す物・処分する物を分別し、搬出まで責任を持って対応します。', image: '/images/base-relics/work3.jpg' },
-    { name: '買取・リユース', label: 'REUSE', text: '再利用できる品は買取・リユースにより、ご負担軽減につなげます。', image: '/images/base-relics/work1.jpg' },
-    { name: '室内清掃', label: 'CLEANING', text: '整理後のお部屋の清掃まで対応し、きれいな状態でお引き渡しします。', image: '/images/base-relics/work2.jpg' },
-    { name: '特殊清掃のご相談', label: 'SPECIAL', text: '状況に応じた特殊清掃のご相談にも、まずはお気軽にお問い合わせください。', image: '/images/base-relics/work3.jpg' },
+    { name: '遺品整理', label: 'RELICS', text: '故人の品を丁寧に仕分けし、ご遺族のご意向に沿って整理いたします。', image: '/images/base-relics/svc1.jpg' },
+    { name: '生前整理', label: 'PRE-ORGANIZE', text: 'ご本人・ご家族と相談しながら、身のまわりの整理をお手伝いします。', image: '/images/base-relics/svc2.jpg' },
+    { name: '不用品の分別・搬出', label: 'SORTING', text: '残す物・処分する物を分別し、搬出まで責任を持って対応します。', image: '/images/base-relics/svc3.jpg' },
+    { name: '買取・リユース', label: 'REUSE', text: '再利用できる品は買取・リユースにより、ご負担軽減につなげます。', image: '/images/base-relics/svc4.jpg' },
+    { name: '室内清掃', label: 'CLEANING', text: '整理後のお部屋の清掃まで対応し、きれいな状態でお引き渡しします。', image: '/images/base-relics/svc5.jpg' },
+    { name: '特殊清掃のご相談', label: 'SPECIAL', text: '状況に応じた特殊清掃のご相談にも、まずはお気軽にお問い合わせください。', image: '/images/base-relics/svc6.jpg' },
   ],
   strengths: [
     { title: 'お気持ちに寄り添う対応', text: 'ご遺族のお気持ちに配慮し、心を込めて丁寧に作業いたします。', label: 'SINCERE' },

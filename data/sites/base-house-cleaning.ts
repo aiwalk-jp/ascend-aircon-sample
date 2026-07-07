@@ -19,6 +19,7 @@ export const baseHouseCleaning: SiteData = {
   contactTitle: '住まいの汚れやお掃除のこと、まずはご相談ください。',
   contactDescription: '汚れのご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-house-cleaning/hero.jpg',
+  serviceHeroImage: '/images/base-house-cleaning/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
     { label: '対応範囲', value: '住まい全般', note: '水まわり〜エアコンまで' },
@@ -26,12 +27,12 @@ export const baseHouseCleaning: SiteData = {
     { label: '作業品質', value: '丁寧作業', note: '専門の技術と道具で対応' },
   ],
   services: [
-    { name: 'エアコンクリーニング', label: 'AIRCON', text: '内部を分解洗浄し、におい・カビ・汚れをすっきり除去します。', image: '/images/base-house-cleaning/work1.jpg' },
-    { name: 'キッチン・レンジフード', label: 'KITCHEN', text: '油汚れがたまりやすいレンジフードやコンロまわりを丁寧に洗浄します。', image: '/images/base-house-cleaning/work2.jpg' },
-    { name: '浴室クリーニング', label: 'BATH', text: '水垢やカビが気になる浴室を、専用の洗剤と道具でクリーニングします。', image: '/images/base-house-cleaning/work3.jpg' },
-    { name: 'トイレ・洗面所', label: 'SANITARY', text: '水まわりの気になる汚れを除去し、清潔な状態に整えます。', image: '/images/base-house-cleaning/work1.jpg' },
-    { name: '床・窓・サッシ', label: 'FLOOR', text: '床のワックスや窓・サッシの汚れなど、住まい全体をきれいにします。', image: '/images/base-house-cleaning/work2.jpg' },
-    { name: '空室・退去前清掃', label: 'VACANCY', text: '引っ越しや退去前のまとめて清掃にも対応します。', image: '/images/base-house-cleaning/work3.jpg' },
+    { name: 'エアコンクリーニング', label: 'AIRCON', text: '内部を分解洗浄し、におい・カビ・汚れをすっきり除去します。', image: '/images/base-house-cleaning/svc1.jpg' },
+    { name: 'キッチン・レンジフード', label: 'KITCHEN', text: '油汚れがたまりやすいレンジフードやコンロまわりを丁寧に洗浄します。', image: '/images/base-house-cleaning/svc2.jpg' },
+    { name: '浴室クリーニング', label: 'BATH', text: '水垢やカビが気になる浴室を、専用の洗剤と道具でクリーニングします。', image: '/images/base-house-cleaning/svc3.jpg' },
+    { name: 'トイレ・洗面所', label: 'SANITARY', text: '水まわりの気になる汚れを除去し、清潔な状態に整えます。', image: '/images/base-house-cleaning/svc4.jpg' },
+    { name: '床・窓・サッシ', label: 'FLOOR', text: '床のワックスや窓・サッシの汚れなど、住まい全体をきれいにします。', image: '/images/base-house-cleaning/svc5.jpg' },
+    { name: '空室・退去前清掃', label: 'VACANCY', text: '引っ越しや退去前のまとめて清掃にも対応します。', image: '/images/base-house-cleaning/svc6.jpg' },
   ],
   strengths: [
     { title: '汚れに合わせた丁寧な作業', text: '場所や汚れの状態に合わせて、最適な洗浄方法で対応します。', label: 'CAREFUL' },

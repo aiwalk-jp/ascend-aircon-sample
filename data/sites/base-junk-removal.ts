@@ -19,6 +19,7 @@ export const baseJunkRemoval: SiteData = {
   contactTitle: '不用品回収・片付けのこと、まずはご相談ください。',
   contactDescription: '量・品目のご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-junk-removal/hero.jpg',
+  serviceHeroImage: '/images/base-junk-removal/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
     { label: '対応範囲', value: '1点〜まとめて', note: '回収から片付けまで' },
@@ -26,12 +27,12 @@ export const baseJunkRemoval: SiteData = {
     { label: '対応スピード', value: '迅速対応', note: 'お急ぎの回収もご相談を' },
   ],
   services: [
-    { name: '家具・家電の回収', label: 'FURNITURE', text: 'ソファ・タンス・冷蔵庫など、大きな家具・家電の回収に対応します。', image: '/images/base-junk-removal/work1.jpg' },
-    { name: 'お部屋の片付け', label: 'CLEAN OUT', text: '散らかったお部屋の片付けから搬出まで、まとめて対応します。', image: '/images/base-junk-removal/work2.jpg' },
-    { name: '引っ越し時の処分', label: 'MOVING', text: '引っ越しに伴う不用品を、まとめて分別・処分します。', image: '/images/base-junk-removal/work3.jpg' },
-    { name: '事業所・店舗の回収', label: 'BUSINESS', text: '事務所・店舗の什器や備品の回収・処分にも対応します。', image: '/images/base-junk-removal/work1.jpg' },
-    { name: '分別・搬出', label: 'SORTING', text: '分別や重い物の搬出も、スタッフが丁寧に対応します。', image: '/images/base-junk-removal/work2.jpg' },
-    { name: '買取・リユースのご相談', label: 'REUSE', text: '再利用できる品は買取・リユースで、ご負担軽減につなげます。', image: '/images/base-junk-removal/work3.jpg' },
+    { name: '家具・家電の回収', label: 'FURNITURE', text: 'ソファ・タンス・冷蔵庫など、大きな家具・家電の回収に対応します。', image: '/images/base-junk-removal/svc1.jpg' },
+    { name: 'お部屋の片付け', label: 'CLEAN OUT', text: '散らかったお部屋の片付けから搬出まで、まとめて対応します。', image: '/images/base-junk-removal/svc2.jpg' },
+    { name: '引っ越し時の処分', label: 'MOVING', text: '引っ越しに伴う不用品を、まとめて分別・処分します。', image: '/images/base-junk-removal/svc3.jpg' },
+    { name: '事業所・店舗の回収', label: 'BUSINESS', text: '事務所・店舗の什器や備品の回収・処分にも対応します。', image: '/images/base-junk-removal/svc4.jpg' },
+    { name: '分別・搬出', label: 'SORTING', text: '分別や重い物の搬出も、スタッフが丁寧に対応します。', image: '/images/base-junk-removal/svc5.jpg' },
+    { name: '買取・リユースのご相談', label: 'REUSE', text: '再利用できる品は買取・リユースで、ご負担軽減につなげます。', image: '/images/base-junk-removal/svc6.jpg' },
   ],
   strengths: [
     { title: '1点からまとめてまで対応', text: '小さな1点の回収から、お部屋まるごとの片付けまで対応します。', label: 'FLEXIBLE' },

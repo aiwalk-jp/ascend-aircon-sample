@@ -19,6 +19,7 @@ export const baseCarCoating: SiteData = {
   contactTitle: '愛車のコーティング・洗車のこと、まずはご相談ください。',
   contactDescription: '施工内容のご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-car-coating/hero.jpg',
+  serviceHeroImage: '/images/base-car-coating/svctop.jpg',
   stats: [
     { label: '対応車種', value: '幅広く対応', note: '新車・中古車どちらも' },
     { label: '施工内容', value: '下地〜仕上げ', note: '丁寧な下地処理を重視' },
@@ -26,12 +27,12 @@ export const baseCarCoating: SiteData = {
     { label: '仕上がり', value: '深い艶感', note: '長期の保護と美観を両立' },
   ],
   services: [
-    { name: 'ガラスコーティング', label: 'GLASS COAT', text: 'ボディを保護し、深い艶と防汚性を高めるガラスコーティングを施工します。', image: '/images/base-car-coating/work1.jpg' },
-    { name: 'ポリッシュ・磨き', label: 'POLISH', text: '細かなキズやくすみを整え、塗装本来の輝きを引き出します。', image: '/images/base-car-coating/work2.jpg' },
-    { name: '洗車・下地処理', label: 'WASH', text: 'コーティング前の丁寧な洗車・下地処理で仕上がりの質を高めます。', image: '/images/base-car-coating/work3.jpg' },
-    { name: 'ホイールコーティング', label: 'WHEEL', text: 'ブレーキダストや汚れが付きにくいよう、ホイールもコーティングします。', image: '/images/base-car-coating/work1.jpg' },
-    { name: '室内クリーニング', label: 'INTERIOR', text: 'シートやダッシュボードなど、車内の清掃・除菌にも対応します。', image: '/images/base-car-coating/work2.jpg' },
-    { name: 'メンテナンス施工', label: 'MAINTENANCE', text: 'コーティング後の状態維持のためのメンテナンス施工も承ります。', image: '/images/base-car-coating/work3.jpg' },
+    { name: 'ガラスコーティング', label: 'GLASS COAT', text: 'ボディを保護し、深い艶と防汚性を高めるガラスコーティングを施工します。', image: '/images/base-car-coating/svc1.jpg' },
+    { name: 'ポリッシュ・磨き', label: 'POLISH', text: '細かなキズやくすみを整え、塗装本来の輝きを引き出します。', image: '/images/base-car-coating/svc2.jpg' },
+    { name: '洗車・下地処理', label: 'WASH', text: 'コーティング前の丁寧な洗車・下地処理で仕上がりの質を高めます。', image: '/images/base-car-coating/svc3.jpg' },
+    { name: 'ホイールコーティング', label: 'WHEEL', text: 'ブレーキダストや汚れが付きにくいよう、ホイールもコーティングします。', image: '/images/base-car-coating/svc4.jpg' },
+    { name: '室内クリーニング', label: 'INTERIOR', text: 'シートやダッシュボードなど、車内の清掃・除菌にも対応します。', image: '/images/base-car-coating/svc5.jpg' },
+    { name: 'メンテナンス施工', label: 'MAINTENANCE', text: 'コーティング後の状態維持のためのメンテナンス施工も承ります。', image: '/images/base-car-coating/svc6.jpg' },
   ],
   strengths: [
     { title: '丁寧な下地処理へのこだわり', text: '仕上がりを左右する洗車・下地処理を一台ずつ丁寧に行います。', label: 'BASE CARE' },

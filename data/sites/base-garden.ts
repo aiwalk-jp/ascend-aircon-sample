@@ -19,6 +19,7 @@ export const baseGarden: SiteData = {
   contactTitle: '庭木の剪定・お庭管理のこと、まずはご相談ください。',
   contactDescription: 'お手入れのご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-garden/hero.jpg',
+  serviceHeroImage: '/images/base-garden/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
     { label: '対応範囲', value: '剪定〜庭づくり', note: 'お手入れから施工まで' },
@@ -26,12 +27,12 @@ export const baseGarden: SiteData = {
     { label: '対応姿勢', value: '季節対応', note: '樹木の状態に合わせて管理' },
   ],
   services: [
-    { name: '庭木の剪定', label: 'PRUNING', text: '樹木の種類や状態に合わせて剪定し、風通しと見た目を整えます。', image: '/images/base-garden/work1.jpg' },
-    { name: '伐採・抜根', label: 'FELLING', text: '大きくなりすぎた樹木の伐採や、抜根・処分まで対応します。', image: '/images/base-garden/work2.jpg' },
-    { name: '植栽・庭づくり', label: 'PLANTING', text: '植栽や庭のレイアウトを、住まいに合わせてご提案・施工します。', image: '/images/base-garden/work3.jpg' },
-    { name: '除草・草刈り', label: 'WEEDING', text: '伸びた雑草の除草・草刈りで、庭まわりをすっきり保ちます。', image: '/images/base-garden/work1.jpg' },
-    { name: '消毒・害虫対策', label: 'PROTECT', text: '樹木の消毒や害虫対策で、庭木を健やかに保ちます。', image: '/images/base-garden/work2.jpg' },
-    { name: '定期メンテナンス', label: 'MAINTENANCE', text: '定期的な手入れで、美しい庭を長く維持できるようサポートします。', image: '/images/base-garden/work3.jpg' },
+    { name: '庭木の剪定', label: 'PRUNING', text: '樹木の種類や状態に合わせて剪定し、風通しと見た目を整えます。', image: '/images/base-garden/svc1.jpg' },
+    { name: '伐採・抜根', label: 'FELLING', text: '大きくなりすぎた樹木の伐採や、抜根・処分まで対応します。', image: '/images/base-garden/svc2.jpg' },
+    { name: '植栽・庭づくり', label: 'PLANTING', text: '植栽や庭のレイアウトを、住まいに合わせてご提案・施工します。', image: '/images/base-garden/svc3.jpg' },
+    { name: '除草・草刈り', label: 'WEEDING', text: '伸びた雑草の除草・草刈りで、庭まわりをすっきり保ちます。', image: '/images/base-garden/svc4.jpg' },
+    { name: '消毒・害虫対策', label: 'PROTECT', text: '樹木の消毒や害虫対策で、庭木を健やかに保ちます。', image: '/images/base-garden/svc5.jpg' },
+    { name: '定期メンテナンス', label: 'MAINTENANCE', text: '定期的な手入れで、美しい庭を長く維持できるようサポートします。', image: '/images/base-garden/svc6.jpg' },
   ],
   strengths: [
     { title: '樹木に合わせた丁寧な手入れ', text: '樹種や季節に合わせて、樹木の状態を見ながら丁寧に管理します。', label: 'CAREFUL' },

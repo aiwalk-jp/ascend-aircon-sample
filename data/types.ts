@@ -54,6 +54,8 @@ export type SiteData = {
   contactDescription?: string;
   /** ヒーロー背景画像URL。未設定ならダークグラデーションにフォールバック（崩れない） */
   heroImage?: string;
+  /** 事業紹介ページ上部の写真URL。未設定なら heroImage を流用 */
+  serviceHeroImage?: string;
   // 各配列は空 [] にするとそのセクションが自動で非表示になる
   stats: Stat[];
   services: Service[];

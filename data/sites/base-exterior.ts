@@ -19,6 +19,7 @@ export const baseExterior: SiteData = {
   contactTitle: '外構・エクステリアのこと、まずはご相談ください。',
   contactDescription: '現地調査・プラン・お見積りのご相談など、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-exterior/hero.jpg',
+  serviceHeroImage: '/images/base-exterior/svctop.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },
     { label: '対応範囲', value: '設計〜施工', note: 'プランから施工まで一貫' },
@@ -26,12 +27,12 @@ export const baseExterior: SiteData = {
     { label: '提案方針', value: '暮らし重視', note: '使いやすさと見た目を両立' },
   ],
   services: [
-    { name: '駐車場・カーポート', label: 'PARKING', text: '土間コンクリートやカーポートなど、使いやすい駐車スペースをつくります。', image: '/images/base-exterior/work1.jpg' },
-    { name: 'アプローチ・門まわり', label: 'APPROACH', text: '玄関までのアプローチや門まわりを、住まいに合わせてデザインします。', image: '/images/base-exterior/work2.jpg' },
-    { name: 'フェンス・塀', label: 'FENCE', text: 'プライバシーや防犯に配慮したフェンス・塀の設置に対応します。', image: '/images/base-exterior/work3.jpg' },
-    { name: 'ウッドデッキ・テラス', label: 'DECK', text: '庭を活かすウッドデッキやテラスで、暮らしの空間を広げます。', image: '/images/base-exterior/work1.jpg' },
-    { name: '庭・植栽づくり', label: 'GARDEN', text: '植栽やタイルなどを組み合わせ、心地よい庭空間をつくります。', image: '/images/base-exterior/work2.jpg' },
-    { name: '外構リフォーム', label: 'RENEWAL', text: '古くなった外構の改修・リフォームにも対応します。', image: '/images/base-exterior/work3.jpg' },
+    { name: '駐車場・カーポート', label: 'PARKING', text: '土間コンクリートやカーポートなど、使いやすい駐車スペースをつくります。', image: '/images/base-exterior/svc1.jpg' },
+    { name: 'アプローチ・門まわり', label: 'APPROACH', text: '玄関までのアプローチや門まわりを、住まいに合わせてデザインします。', image: '/images/base-exterior/svc2.jpg' },
+    { name: 'フェンス・塀', label: 'FENCE', text: 'プライバシーや防犯に配慮したフェンス・塀の設置に対応します。', image: '/images/base-exterior/svc3.jpg' },
+    { name: 'ウッドデッキ・テラス', label: 'DECK', text: '庭を活かすウッドデッキやテラスで、暮らしの空間を広げます。', image: '/images/base-exterior/svc4.jpg' },
+    { name: '庭・植栽づくり', label: 'GARDEN', text: '植栽やタイルなどを組み合わせ、心地よい庭空間をつくります。', image: '/images/base-exterior/svc5.jpg' },
+    { name: '外構リフォーム', label: 'RENEWAL', text: '古くなった外構の改修・リフォームにも対応します。', image: '/images/base-exterior/svc6.jpg' },
   ],
   strengths: [
     { title: '暮らしやすさへのこだわり', text: '見た目だけでなく、日々の使いやすさを考えたご提案を行います。', label: 'LIVING' },
