@@ -1,0 +1,65 @@
+export type SiteData = {
+  slug: string;
+  companyName: string;
+  businessType: string;
+  catchcopy: string;
+  lead: string;
+  subText: string;
+  area: string;
+  phone: string;
+  address: string;
+  googleMapUrl: string;
+  indeedUrl?: string;
+  colors: { primary: string; secondary: string; accent: string; bg: string };
+  heroImage: string;
+  services: { title: string; text: string }[];
+  strengths: { title: string; text: string }[];
+  works: { title: string; text: string }[];
+  flow: { title: string; text: string }[];
+  recruit: { title: string; text: string }[];
+};
+
+export const sites: Record<string, SiteData> = {
+  ascend: {
+    slug: 'ascend',
+    companyName: 'ASCEND',
+    businessType: 'エアコン工事・空調設備工事',
+    catchcopy: '清瀬市周辺のエアコン工事を、迅速・丁寧に。',
+    lead: 'ASCENDは、東京都清瀬市を拠点にエアコン工事・空調設備工事を行う地域密着の工事業者です。住まい・店舗・事務所の空調まわりのお困りごとに、現場状況を確認しながら柔軟に対応します。',
+    subText: '東京都内を中心に迅速対応いたします',
+    area: '東京都清瀬市周辺対応',
+    phone: '080-5961-0206',
+    address: '東京都清瀬市',
+    googleMapUrl: 'https://www.google.com/maps/place/ASCEND/@35.8031658,139.5419979,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e9e26ad24295:0xecd0e6dba5af6c30!8m2!3d35.8031658!4d139.5419979!16s%2Fg%2F11z56fqrpr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D',
+    colors: { primary: '#0f2f35', secondary: '#173f45', accent: '#c6a15b', bg: '#f6f2ea' },
+    heroImage: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80',
+    services: [
+      { title: '家庭用エアコン工事', text: '新規取付・交換・移設など、住まいの状況に合わせて丁寧に施工します。' },
+      { title: '店舗・事務所の空調工事', text: '小規模店舗やオフィスの空調設備について、現場確認から施工まで対応します。' },
+      { title: '空調まわりのご相談', text: '効きが悪い、入れ替えたい、設置場所を相談したいなど、まずはお気軽にご相談ください。' }
+    ],
+    strengths: [
+      { title: '地域密着の迅速対応', text: '清瀬市周辺を中心に、急ぎのご相談にもできる限り素早く対応します。' },
+      { title: '現場に合わせた柔軟な提案', text: '建物の構造や設置環境を確認し、無理のない施工方法をご提案します。' },
+      { title: '丁寧で安心感のある施工', text: '見えにくい配管・設置まわりまで、長く安心して使える仕上がりを大切にします。' }
+    ],
+    works: [
+      { title: '戸建住宅のエアコン交換', text: '既存機器の撤去から新規設置まで、室内外の見た目にも配慮して施工します。' },
+      { title: '店舗空調の入れ替え相談', text: '営業への影響を抑えながら、空調環境の改善に向けた施工を行います。' },
+      { title: '移設・追加設置のご相談', text: 'お部屋の使い方やレイアウト変更に合わせた移設・追加設置に対応します。' }
+    ],
+    flow: [
+      { title: 'お問い合わせ', text: 'お電話または地図ページからお気軽にご連絡ください。' },
+      { title: '状況確認', text: '設置場所・ご希望内容・現場状況を確認します。' },
+      { title: 'お見積り', text: '必要な工事内容を整理し、分かりやすくご案内します。' },
+      { title: '施工', text: '安全面と仕上がりに配慮しながら丁寧に施工します。' }
+    ],
+    recruit: [
+      { title: '一緒に働く仲間を募集しています', text: '空調工事の仕事に興味がある方、手に職をつけたい方を歓迎します。未経験の方もまずはご相談ください。' }
+    ]
+  }
+};
+
+export function getSite(slug: string) {
+  return sites[slug];
+}
