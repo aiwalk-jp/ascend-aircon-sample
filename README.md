@@ -72,17 +72,55 @@ Claude Code へは、以下をまとめて伝えれば作成できます。
 >  電話 028-000-0000／住所 〒000-0000 栃木県○○市○○1-2-3／
 >  Googleマップ https://...／対応エリア 栃木県○○市周辺対応。slug は maruo-painting で。」
 
-### 作成手順（中身）
-1. 該当ベース `data/sites/base-xxx.ts` を複製 → `data/sites/<会社slug>.ts`
-2. 差し替えるのは基本この6項目だけ：
-   `slug` / `name` / `subName`（必要なら）/ `tel` / `address` / `mapUrl` / `area`・`areaNote`
-   （必要に応じて `logoText`、Indeedは `recruit.applyUrl`）
-3. `data/sites/index.ts` に `import` と配列追加を1行ずつ
-4. `npm run build` で確認 → `git add . && git commit -m "add <slug> sample" && git push`
-5. Vercel 自動デプロイ後、`https://<vercel-domain>/demo/<会社slug>` を送付
+### テレアポ用 入力フォーマット（これを貼るだけ）
 
-> 文言・サービス内容はベースの業種文言をそのまま使えば、その業種の会社が見て違和感のない内容になります。
-> 社名・連絡先・エリアだけ実データに差し替えれば送付可能です。
+サンプル希望が出たら、Claude Code に **このフォーマットで貼る**だけで生成できます。
+
+```
+会社名：
+業種（base-xxx）：
+電話番号：
+住所：
+GoogleマップURL：
+対応エリア：
+```
+
+- 業種は上表の `base-xxx` を指定（例：`base-painting`）。
+- slug は会社名からローマ字/英語で自動生成します（例：丸尾塗装 → `maruo-toso`）。
+- 画像・文言はその業種ベースを流用（実写真があれば後から差し替え可能）。
+
+### 生成コマンド（1コマンド）
+
+上記入力をもとに、ベースを複製して会社情報だけ差し替えるスクリプトを用意しています。
+画像は `/images/<base>/` を参照したままなので**画像コピー不要＝最速**です。
+
+```bash
+node scripts/new-company.mjs \
+  --base base-painting --slug maruo-toso \
+  --name "株式会社丸尾塗装" \
+  --tel "028-000-0000" \
+  --address "〒000-0000 栃木県宇都宮市○○1-2-3" \
+  --map "https://www.google.com/maps/place/..." \
+  --area "栃木県宇都宮市周辺対応"
+# 任意: --sub "外壁塗装・防水工事"  --indeed "https://jp.indeed.com/..."
+```
+
+このスクリプトが自動で行うこと：
+1. `data/sites/<slug>.ts` を生成（`slug` / `logoText` / `name` / `subName` / `tel` / `address` / `mapUrl` / `area` を差し替え、他は業種ベースのまま）
+2. `data/sites/index.ts` に import + 配列登録を追記
+
+### 生成後の運用
+
+```bash
+npm run build                                   # ビルド確認
+git add . && git commit -m "add <slug> sample"  # コミット
+git push                                        # Vercel が自動デプロイ
+```
+
+Vercel デプロイ後、次のURLを送付：`https://ascend-aircon-sample.vercel.app/demo/<slug>`
+
+> Claude Code への依頼時は、上の「入力フォーマット」を貼るだけでOK。
+> 生成・build・push まで実行し、**返答は生成URLのみ**を返します。
 
 ---
 
