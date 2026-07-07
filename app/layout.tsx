@@ -2,8 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'HP Demo Site',
-  description: 'Aiwalk industry website demo'
+  title: {
+    default: 'HPデモ一覧 | Aiwalk 業種別HP制作サービス',
+    template: '%s',
+  },
+  description: 'Aiwalk 業種別HP制作サービスのデモサイトです。',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
