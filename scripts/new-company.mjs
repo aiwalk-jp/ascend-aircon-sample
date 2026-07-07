@@ -43,9 +43,42 @@ if (missing.length) {
   process.exit(1);
 }
 
-const { base, slug, name, tel, address, map, area } = args;
+const { base, name, tel, address, map, area } = args;
 const sub = args.sub || '';
 const indeed = args.indeed || '';
+
+// ---- slug ルール ----
+// 形式: <会社ローマ字>-<業種英語>（ハイフンは1回のみ / 英小文字のみ / 数字・法人格表記なし / 20文字以内）
+//   例: 丸尾塗装(base-painting) → maruo-painting ／ 田中電気(base-electric) → tanaka-electric
+//   会社ローマ字だけ（例: --slug maruo）を渡すと、base から業種英語を自動付与する。
+const INDUSTRY_EN = {
+  'base-aircon': 'aircon',
+  'base-car-coating': 'coating',
+  'base-house-cleaning': 'cleaning',
+  'base-relics': 'relics',
+  'base-roof-sheet-metal': 'roofing',
+  'base-demolition': 'demolition',
+  'base-exterior': 'exterior',
+  'base-painting': 'painting',
+  'base-waterworks': 'plumbing',
+  'base-garden': 'garden',
+  'base-electric': 'electric',
+  'base-interior-cross': 'interior',
+  'base-junk-removal': 'junk',
+  'base-waterproof': 'waterproof',
+};
+let slug = args.slug.trim().toLowerCase();
+// ハイフンが無ければ（＝会社ローマ字のみ）業種英語を付与
+if (!slug.includes('-') && INDUSTRY_EN[base]) slug = `${slug}-${INDUSTRY_EN[base]}`;
+// バリデーション
+if (!/^[a-z]+-[a-z]+$/.test(slug)) {
+  console.error('slug ルール違反: <会社ローマ字>-<業種英語> の形式（英小文字のみ・ハイフン1回・数字/法人格表記は不可）。例: maruo-painting');
+  process.exit(1);
+}
+if (slug.length > 20) {
+  console.error(`slug が長すぎます（${slug.length}文字）。20文字以内に短くしてください（会社名は簡潔なローマ字に）。`);
+  process.exit(1);
+}
 
 // ---- slug -> camelCase の const 名 ----
 const constName = slug.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase());

@@ -86,8 +86,27 @@ GoogleマップURL：
 ```
 
 - 業種は上表の `base-xxx` を指定（例：`base-painting`）。
-- slug は会社名からローマ字/英語で自動生成します（例：丸尾塗装 → `maruo-toso`）。
+- slug は下記ルールで生成します。
 - 画像・文言はその業種ベースを流用（実写真があれば後から差し替え可能）。
+
+#### slug 生成ルール
+
+形式：`<会社ローマ字>-<業種英語>`
+
+- 会社名は**短く簡潔なローマ字**（「株式会社」「有限会社」は除外）
+- 業種は**英語**（`base` に対応：`aircon` / `coating` / `cleaning` / `relics` / `roofing` / `demolition` / `exterior` / `painting` / `plumbing` / `garden` / `electric` / `interior` / `junk` / `waterproof`）
+- **ハイフンは1回まで**、英小文字のみ、**数字は不可**
+- **20文字以内**（不自然に長いものは不可）
+
+| 会社名 | slug |
+|---|---|
+| 丸尾塗装 | `maruo-painting` |
+| 田中電気 | `tanaka-electric` |
+
+NG例：`kabushikigaisha-maruo-tosou`（法人格・ローマ字業種・ハイフン過多）／`maruo-tosou-123`（数字）
+
+> 会社ローマ字だけ（例：`--slug maruo` × `--base base-painting`）を渡すと、業種英語（`-painting`）を自動付与します。
+> ルール違反（数字・ハイフン過多・20文字超）はスクリプトが自動で弾きます。
 
 ### 生成コマンド（1コマンド）
 
