@@ -16,6 +16,8 @@ export const baseJunkRemoval: SiteData = {
   hours: 'お電話でお気軽にご相談ください',
   address: '〒000-0000 ○○県○○市○○ 1-2-3',
   mapUrl: 'https://www.google.com/maps',
+  contactTitle: '不用品回収・片付けのこと、まずはご相談ください。',
+  contactDescription: '量・品目のご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-junk-removal/hero.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },

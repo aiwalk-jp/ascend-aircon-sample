@@ -16,6 +16,8 @@ export const baseCarCoating: SiteData = {
   hours: 'お電話でお気軽にご相談ください',
   address: '〒000-0000 ○○県○○市○○ 1-2-3',
   mapUrl: 'https://www.google.com/maps',
+  contactTitle: '愛車のコーティング・洗車のこと、まずはご相談ください。',
+  contactDescription: '施工内容のご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-car-coating/hero.jpg',
   stats: [
     { label: '対応車種', value: '幅広く対応', note: '新車・中古車どちらも' },

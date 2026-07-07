@@ -16,6 +16,8 @@ export const baseElectric: SiteData = {
   hours: 'お電話でお気軽にご相談ください',
   address: '〒000-0000 ○○県○○市○○ 1-2-3',
   mapUrl: 'https://www.google.com/maps',
+  contactTitle: '電気工事・照明設備のこと、まずはご相談ください。',
+  contactDescription: '工事のご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-electric/hero.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },

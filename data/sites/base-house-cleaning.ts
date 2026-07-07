@@ -16,6 +16,8 @@ export const baseHouseCleaning: SiteData = {
   hours: 'お電話でお気軽にご相談ください',
   address: '〒000-0000 ○○県○○市○○ 1-2-3',
   mapUrl: 'https://www.google.com/maps',
+  contactTitle: '住まいの汚れやお掃除のこと、まずはご相談ください。',
+  contactDescription: '汚れのご相談・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-house-cleaning/hero.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ丁寧対応' },

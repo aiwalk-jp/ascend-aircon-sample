@@ -199,8 +199,8 @@ export default async function Home({ params }: Props) {
           <div className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-teal-800 to-slate-950 p-8 text-white shadow-[0_30px_90px_rgba(15,23,42,.22)] md:flex md:items-center md:justify-between md:p-10">
             <div>
               <p className="section-label text-teal-200">CONTACT</p>
-              <h2 className="mt-3 text-3xl font-black leading-tight md:text-4xl">エアコン・空調の気になること、まずはご相談ください。</h2>
-              <p className="mt-4 text-slate-200">現地確認・お見積り・採用相談など、お電話でお気軽にお問い合わせください。</p>
+              <h2 className="mt-3 text-3xl font-black leading-tight md:text-4xl">{site.contactTitle ?? '気になること、まずはご相談ください。'}</h2>
+              <p className="mt-4 text-slate-200">{site.contactDescription ?? '現地確認・お見積り・ご相談など、お電話でお気軽にお問い合わせください。'}</p>
             </div>
             <div className="mt-7 flex flex-wrap gap-3 md:mt-0"><a href={`tel:${site.tel}`} className="inline-flex rounded-2xl bg-white px-8 py-4 text-xl font-black text-teal-900 shadow-xl">{site.tel}</a><a href={site.mapUrl} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl border border-white/25 px-8 py-4 font-black text-white transition hover:bg-white hover:text-teal-900">Googleマップで見る</a></div>
           </div>

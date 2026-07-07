@@ -16,6 +16,8 @@ export const basePainting: SiteData = {
   hours: 'お電話でお気軽にご相談ください',
   address: '〒000-0000 ○○県○○市○○ 1-2-3',
   mapUrl: 'https://www.google.com/maps',
+  contactTitle: '外壁塗装・防水工事のこと、まずはご相談ください。',
+  contactDescription: '現地調査・お見積り・ご相談など、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-painting/hero.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },

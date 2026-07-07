@@ -17,6 +17,8 @@ export const ascend: SiteData = {
   address: '〒204-0001 東京都清瀬市下宿３丁目',
   mapUrl:
     'https://www.google.com/maps/place/ASCEND/@35.8031658,139.5419979,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e9e26ad24295:0xecd0e6dba5af6c30!8m2!3d35.8031658!4d139.5419979!16s%2Fg%2F11z56fqrpr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D',
+  contactTitle: 'エアコン・空調の気になること、まずはご相談ください。',
+  contactDescription: '現地確認・お見積り・採用相談など、お電話でお気軽にお問い合わせください。',
   // ヒーロー背景画像。未設定にするとダークグラデーションにフォールバックし、見栄えは崩れない。
   heroImage: '/images/ascend/hero.jpg',
   stats: [

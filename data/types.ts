@@ -48,6 +48,10 @@ export type SiteData = {
   hours: string;
   address: string;
   mapUrl: string;
+  /** TOPページ下部 CONTACT CTA の大見出し。未設定なら汎用文言 */
+  contactTitle?: string;
+  /** TOPページ下部 CONTACT CTA の説明文。未設定なら汎用文言 */
+  contactDescription?: string;
   /** ヒーロー背景画像URL。未設定ならダークグラデーションにフォールバック（崩れない） */
   heroImage?: string;
   // 各配列は空 [] にするとそのセクションが自動で非表示になる

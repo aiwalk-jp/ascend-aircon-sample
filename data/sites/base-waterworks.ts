@@ -16,6 +16,8 @@ export const baseWaterworks: SiteData = {
   hours: 'お電話でお気軽にご相談ください',
   address: '〒000-0000 ○○県○○市○○ 1-2-3',
   mapUrl: 'https://www.google.com/maps',
+  contactTitle: '水まわり・給排水設備のこと、まずはご相談ください。',
+  contactDescription: '水まわりのトラブル・お見積りなど、お電話でお気軽にお問い合わせください。',
   heroImage: '/images/base-waterworks/hero.jpg',
   stats: [
     { label: '対応エリア', value: '地域密着', note: '地域のお客様へ迅速対応' },
