@@ -17,7 +17,9 @@ export const ascend: SiteData = {
   address: '東京都清瀬市',
   mapUrl:
     'https://www.google.com/maps/place/ASCEND/@35.8031658,139.5419979,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e9e26ad24295:0xecd0e6dba5af6c30!8m2!3d35.8031658!4d139.5419979!16s%2Fg%2F11z56fqrpr?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D',
-  // heroImage は未設定。ダークグラデーションで見栄えが崩れないようにしている。
+  // ヒーロー背景画像（デモ用の仮写真。ASCENDの実写真が用意でき次第このパスを差し替える）。
+  // 未設定にするとダークグラデーションにフォールバックし、見栄えは崩れない。
+  heroImage: '/images/hero-demo.jpg',
   stats: [
     { label: '対応エリア', value: '清瀬市周辺', note: '東京都内を中心に迅速対応' },
     { label: '対応内容', value: '取付〜メンテ', note: '家庭用・業務用エアコンに対応' },
