@@ -54,5 +54,6 @@ export const ascend: SiteData = {
     // Indeed等の求人URLがあれば設定。未設定の場合はページ内の応募案内へ移動します。
     applyUrl: '',
     image: '/images/ascend/recruit.jpg',
+    subImage: '/images/ascend/work3.jpg',
   },
 };

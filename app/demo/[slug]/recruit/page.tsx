@@ -74,7 +74,7 @@ export default async function RecruitPage({ params }: Props) {
                     <p className="mt-4 text-xl font-black leading-snug">{point}</p>
                   </div>
                 ))}
-                <PhotoFrame label="職場の雰囲気・スタッフ写真" src={site.recruit.image} className={points.length === 1 ? 'rounded-[1.7rem]' : 'sm:col-span-2 rounded-[1.7rem]'} />
+                <PhotoFrame label="職場の雰囲気・スタッフ写真" src={site.recruit.subImage || site.recruit.image} className={points.length === 1 ? 'rounded-[1.7rem]' : 'sm:col-span-2 rounded-[1.7rem]'} />
               </div>
             )}
           </div>

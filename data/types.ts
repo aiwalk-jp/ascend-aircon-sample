@@ -15,8 +15,10 @@ export type Recruit = {
   message: string;
   /** Indeed等の求人URL。設定すると応募ボタンの遷移先を差し替え。空文字ならページ内案内へ */
   applyUrl: string;
-  /** 採用ページの写真URL。未指定なら写真枠プレースホルダー表示 */
+  /** 採用ページ上部の写真URL。未指定なら写真枠プレースホルダー表示 */
   image?: string;
+  /** 採用ページ「職場の雰囲気」枠の写真URL。未指定なら image を流用 */
+  subImage?: string;
 };
 
 export type SiteData = {
