@@ -17,6 +17,7 @@ import { baseWaterproof } from './base-waterproof';
 import { baseHandyman } from './base-handyman';
 import { sentakukiUracaan } from './sentakuki-uracaan';
 import { ichiroAircleaning } from './ichiro-aircleaning';
+import { selectedAircleaning } from './selected-aircleaning';
 
 // 個社サンプルはここに1行 import + 配列追加するだけで /demo/<slug> が増える。
 // base-* は業種ベース（雛形）。個社対応時は base-* を複製して社名等を差し替える。
@@ -39,6 +40,7 @@ const siteList: SiteData[] = [
   baseHandyman,
   sentakukiUracaan,
   ichiroAircleaning,
+  selectedAircleaning,
 ];
 
 /** slug をキーにした会社データの辞書 */
