@@ -13,11 +13,11 @@ export const sentakukiUracaan: SiteData = {
     '洗濯機の分解クリーニングから、給排水・乾燥のトラブル、各種修理まで対応する専門サービスです。洗濯機のお困りごとをまるごとご相談いただけます。',
   area: '全国対応',
   areaNote: '全国のお客様の洗濯機トラブルに対応します',
-  // 電話は未設定。テンプレのボタンが空欄で崩れないよう、他ベースと同じ未設定プレースホルダーを使用（送付前に実番号へ差し替え可）。
-  tel: '000-0000-0000',
+  tel: '080-6954-7008',
   hours: 'お気軽にお問い合わせください',
-  address: '全国対応',
-  mapUrl: 'https://www.google.com/maps',
+  address: '〒444-0244 愛知県岡崎市下青野町 字本築70番地メゾネットランド下青野105',
+  mapUrl:
+    'https://www.google.com/maps/place/%E6%B4%97%E6%BF%AF%E6%A9%9F%E3%81%AE%E3%82%A6%E3%83%A9%E3%82%AB%E3%83%BC%E3%83%B3/@34.9413352,137.0225079,12z/data=!4m10!1m2!2m1!1z5rSX5r-v5qmf44Gu44Km44Op44Kr44O844Oz!3m6!1s0x600365f3cbf520db:0x33e51a1a979f9cda!8m2!3d34.9413352!4d137.1625836!15sChvmtJfmv6_mqZ_jga7jgqbjg6njgqvjg7zjg7OSAR93YXNoZXJfYW5kX2RyeWVyX3JlcGFpcl9zZXJ2aWNl4AEA!16s%2Fg%2F11z1_kk5kj?entry=ttu&g_ep=EgoyMDI2MDcwNS4wIKXMDSoASAFQAw%3D%3D',
   contactTitle: '洗濯機のトラブル、まずはご相談ください。',
   contactDescription: '分解クリーニング・修理・トラブル対応など、お気軽にお問い合わせください。',
   heroImage: '/images/sentakuki-uracaan/hero.jpg',
