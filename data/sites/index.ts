@@ -15,6 +15,7 @@ import { baseInteriorCross } from './base-interior-cross';
 import { baseJunkRemoval } from './base-junk-removal';
 import { baseWaterproof } from './base-waterproof';
 import { baseHandyman } from './base-handyman';
+import { sentakukiUracaan } from './sentakuki-uracaan';
 
 // 個社サンプルはここに1行 import + 配列追加するだけで /demo/<slug> が増える。
 // base-* は業種ベース（雛形）。個社対応時は base-* を複製して社名等を差し替える。
@@ -35,6 +36,7 @@ const siteList: SiteData[] = [
   baseJunkRemoval,
   baseWaterproof,
   baseHandyman,
+  sentakukiUracaan,
 ];
 
 /** slug をキーにした会社データの辞書 */
