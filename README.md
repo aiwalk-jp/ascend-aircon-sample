@@ -33,6 +33,7 @@ Aiwalk「業種別HP制作サービス」の営業用デモサイトです。
 | 内装・クロス | `/demo/base-interior-cross` |
 | 不用品回収 | `/demo/base-junk-removal` |
 | 防水工事 | `/demo/base-waterproof` |
+| 便利屋 | `/demo/base-handyman` |
 
 ※ 実案件例：`/demo/ascend`（ASCEND向け・base-aircon から作成）
 
@@ -94,7 +95,7 @@ GoogleマップURL：
 形式：`<会社ローマ字>-<業種英語>`
 
 - 会社名は**短く簡潔なローマ字**（「株式会社」「有限会社」は除外）
-- 業種は**英語**（`base` に対応：`aircon` / `coating` / `cleaning` / `relics` / `roofing` / `demolition` / `exterior` / `painting` / `plumbing` / `garden` / `electric` / `interior` / `junk` / `waterproof`）
+- 業種は**英語**（`base` に対応：`aircon` / `coating` / `cleaning` / `relics` / `roofing` / `demolition` / `exterior` / `painting` / `plumbing` / `garden` / `electric` / `interior` / `junk` / `waterproof` / `handyman`）
 - **ハイフンは1回まで**、英小文字のみ、**数字は不可**
 - **20文字以内**（不自然に長いものは不可）
 

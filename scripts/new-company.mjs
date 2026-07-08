@@ -66,6 +66,7 @@ const INDUSTRY_EN = {
   'base-interior-cross': 'interior',
   'base-junk-removal': 'junk',
   'base-waterproof': 'waterproof',
+  'base-handyman': 'handyman',
 };
 let slug = args.slug.trim().toLowerCase();
 // ハイフンが無ければ（＝会社ローマ字のみ）業種英語を付与
@@ -151,6 +152,7 @@ const TAGLINE = {
   'base-interior-cross': (r) => `${r}の空間の印象を変える、\\n内装リフォーム。`,
   'base-junk-removal': (r) => `${r}の不用品の片付けを、\\nまるごとおまかせ。`,
   'base-waterproof': (r) => `${r}の建物を雨水から守る、\\n確かな防水工事。`,
+  'base-handyman': (r) => `${r}の「困った」を、\\nまとめて解決する便利屋です`,
 };
 if (regionValid && TAGLINE[base]) {
   src = src.replace(/^  tagline: '(?:[^'\\]|\\.)*',/m, `  tagline: '${TAGLINE[base](region)}',`);

@@ -56,6 +56,8 @@ export type SiteData = {
   heroImage?: string;
   /** 事業紹介ページ上部の写真URL。未設定なら heroImage を流用 */
   serviceHeroImage?: string;
+  /** 事業紹介ページの注意書き（任意）。設定時のみ見出し下に控えめに表示 */
+  serviceNote?: string;
   // 各配列は空 [] にするとそのセクションが自動で非表示になる
   stats: Stat[];
   services: Service[];
