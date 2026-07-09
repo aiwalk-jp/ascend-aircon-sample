@@ -35,12 +35,12 @@ export const flumen: SiteData = {
     { label: '相談', value: '相談しやすい', note: '小さな工事もお気軽にご相談ください' },
   ],
   services: [
-    { name: '外壁塗装', label: 'PAINT', text: '外壁の状態に合わせた最適な塗装をご提案します。', image: '/images/base-painting/svc1.jpg' },
-    { name: '屋根塗装', label: 'ROOF', text: '屋根材を保護し耐久性を高めます。', image: '/images/base-painting/svc2.jpg' },
-    { name: '外装リフォーム', label: 'REFORM', text: '住まい全体の外装リフォームに対応します。', image: '/images/base-painting/svc5.jpg' },
-    { name: '防水工事', label: 'WATERPROOF', text: '屋上・ベランダなど各種防水施工に対応します。', image: '/images/base-painting/svc3.jpg' },
-    { name: '雨漏り修理', label: 'LEAK', text: '原因調査から補修まで対応します。', image: '/images/base-painting/svc4.jpg' },
-    { name: '外壁診断・ご相談', label: 'DIAGNOSIS', text: 'まずはお気軽にご相談ください。', image: '/images/base-painting/svc6.jpg' },
+    { name: '外壁塗装', label: 'PAINT', text: '外壁の状態に合わせた最適な塗装をご提案します。', image: '/images/base-painting/svc1.jpg', note: '色あせ・ひび割れ・チョーキングなど、外壁の劣化状況に合わせた最適な塗装をご提案します。' },
+    { name: '屋根塗装', label: 'ROOF', text: '屋根材を保護し耐久性を高めます。', image: '/images/base-painting/svc2.jpg', note: '色あせ・サビ・防水性能の低下など、屋根の状態に合わせた塗装をご提案します。' },
+    { name: '外装リフォーム', label: 'REFORM', text: '住まい全体の外装リフォームに対応します。', image: '/images/base-painting/svc5.jpg', note: '塗装だけでは改善できない箇所も、補修・交換を含めたご提案が可能です。' },
+    { name: '防水工事', label: 'WATERPROOF', text: '屋上・ベランダなど各種防水施工に対応します。', image: '/images/base-painting/svc3.jpg', note: 'ベランダや屋上からの雨水侵入を防ぎ、建物の寿命を延ばします。' },
+    { name: '雨漏り修理', label: 'LEAK', text: '原因調査から補修まで対応します。', image: '/images/base-painting/svc4.jpg', note: '原因をしっかり調査し、補修から再発防止まで対応します。' },
+    { name: '外壁診断・ご相談', label: 'DIAGNOSIS', text: 'まずはお気軽にご相談ください。', image: '/images/base-painting/svc6.jpg', note: '「これって相談していいのかな？」そんな小さなお困りごとからお気軽にご相談ください。' },
   ],
   strengths: [
     { title: '現地調査から施工完了まで一貫対応', text: '現場確認から施工後まで責任を持って対応します。', label: 'ONE STOP' },

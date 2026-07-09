@@ -57,7 +57,7 @@ export default async function ServicePage({ params }: Props) {
                       <p className="text-[11px] font-black tracking-[.20em] text-teal-700">{s.label}</p>
                       <h2 className="mt-3 text-3xl font-black">{s.name}</h2>
                       <p className="mt-4 leading-8 text-slate-600">{s.text}</p>
-                      <p className="mt-6 rounded-2xl bg-teal-50 p-4 text-sm font-bold leading-7 text-teal-900">現地の状況をもとに、必要な工事内容を分かりやすくご説明します。</p>
+                      <p className="mt-6 rounded-2xl bg-teal-50 p-4 text-sm font-bold leading-7 text-teal-900">{s.note ?? '現地の状況をもとに、必要な工事内容を分かりやすくご説明します。'}</p>
                     </div>
                   </div>
                 </div>
