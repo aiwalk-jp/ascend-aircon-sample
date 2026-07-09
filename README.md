@@ -142,7 +142,10 @@ git add . && git commit -m "add <slug> sample"  # コミット
 git push                                        # Vercel が自動デプロイ
 ```
 
-Vercel デプロイ後、次のURLを送付：`https://ascend-aircon-sample.vercel.app/demo/<slug>`
+Vercel デプロイ後、次のURLを送付：`https://aiwalk-hp-demo.vercel.app/demo/<slug>`
+
+> 公開ドメインは中立名 `aiwalk-hp-demo.vercel.app` を正とする（特定企業名・業種名を含めない）。
+> Vercelプロジェクト名を変更した場合は、この README と `scripts/new-company.mjs` の `PUBLIC_BASE` を更新する。
 
 > Claude Code への依頼時は、上の「入力フォーマット」を貼るだけでOK。
 > 生成・build・push まで実行し、**返答は生成URLのみ**を返します。

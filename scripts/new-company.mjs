@@ -191,4 +191,6 @@ if (!idx.includes(`from './${slug}'`)) {
 }
 
 console.log(`生成しました: data/sites/${slug}.ts`);
-console.log(`URL(デプロイ後): https://ascend-aircon-sample.vercel.app/demo/${slug}`);
+// 公開URLのベース（Vercelプロジェクト名。中立名で運用）。プロジェクト名を変えたらここも更新。
+const PUBLIC_BASE = 'https://aiwalk-hp-demo.vercel.app';
+console.log(`URL(デプロイ後): ${PUBLIC_BASE}/demo/${slug}`);
