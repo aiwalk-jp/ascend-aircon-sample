@@ -32,7 +32,7 @@ export default async function ServicePage({ params }: Props) {
   if (!site) notFound();
 
   return (
-    <>
+    <div className={site.brandClass}>
       <Header site={site} active="service" />
       <main>
         <section className="dark-panel flex min-h-[430px] items-center px-5 py-12 text-white md:py-14">
@@ -40,7 +40,7 @@ export default async function ServicePage({ params }: Props) {
             <div>
               <p className="section-label text-teal-200">SERVICE</p>
               <h1 className="mt-4 text-5xl font-black">事業紹介</h1>
-              <p className="mt-5 text-lg leading-9 text-slate-200">住まい・店舗の状況に合わせて、現地確認・提案・施工・アフターまで対応します。</p>
+              <p className="mt-5 text-lg leading-9 text-slate-200">{site.serviceLead ?? '住まい・店舗の状況に合わせて、現地確認・提案・施工・アフターまで対応します。'}</p>
               {site.serviceNote && <p className="mt-5 rounded-2xl bg-white/10 px-5 py-4 text-sm leading-7 text-slate-100 ring-1 ring-white/15">{site.serviceNote}</p>}
             </div>
             <PhotoFrame label="施工中・現地確認・スタッフ写真を挿入" tone="dark" src={site.serviceHeroImage ?? site.heroImage} className="h-[260px] rounded-[2rem] md:h-[280px]" />
@@ -72,6 +72,6 @@ export default async function ServicePage({ params }: Props) {
         </section>
       </main>
       <Footer site={site} />
-    </>
+    </div>
   );
 }

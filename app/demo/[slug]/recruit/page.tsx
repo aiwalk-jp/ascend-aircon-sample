@@ -34,7 +34,7 @@ export default async function RecruitPage({ params }: Props) {
   const points = site.recruit.points;
 
   return (
-    <>
+    <div className={site.brandClass}>
       <Header site={site} active="recruit" />
       <main>
         <section className="dark-panel flex min-h-[430px] items-center px-5 py-12 text-white md:py-14">
@@ -91,6 +91,6 @@ export default async function RecruitPage({ params }: Props) {
         </section>
       </main>
       <Footer site={site} />
-    </>
+    </div>
   );
 }

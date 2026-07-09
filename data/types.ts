@@ -33,8 +33,16 @@ export type SiteData = {
   slug: string;
   /** 業種の想定イメージカラー（メタデータ。現状デザインには未適用） */
   theme?: Theme;
-  /** ヘッダーロゴの1文字（会社イニシャル等） */
+  /** ヘッダーロゴの1文字（会社イニシャル等）。logo 画像がある場合はそちらを優先 */
   logoText: string;
+  /** ロゴ画像URL（任意）。設定時はヘッダー左・フッター左にロゴ画像を表示 */
+  logo?: string;
+  /** 代表者名（任意）。フッター会社情報に表示 */
+  representative?: string;
+  /** ページ全体に付与するブランドテーマ用クラス（任意。例: 'theme-flumen'）。色のみ差し替え */
+  brandClass?: string;
+  /** 事業紹介ページ上部のリード文（任意）。未設定なら既定文 */
+  serviceLead?: string;
   name: string;
   subName: string;
   /** ヒーロー見出し。改行は \n で表現（whitespace-pre-line で反映） */

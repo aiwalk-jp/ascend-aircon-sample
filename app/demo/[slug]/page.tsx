@@ -39,7 +39,7 @@ export default async function Home({ params }: Props) {
   const hasFlow = site.flow.length > 0;
 
   return (
-    <>
+    <div className={site.brandClass}>
       <Header site={site} active="home" />
       <main>
         <section className="relative overflow-hidden bg-slate-950 text-white">
@@ -207,6 +207,6 @@ export default async function Home({ params }: Props) {
         </section>
       </main>
       <Footer site={site} />
-    </>
+    </div>
   );
 }

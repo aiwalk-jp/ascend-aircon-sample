@@ -14,7 +14,12 @@ export function Header({ site, active = 'home' }: { site: SiteData; active?: Act
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-[0_10px_28px_rgba(15,23,42,.08)] backdrop-blur-xl">
       <div className="container-x flex h-[74px] items-center justify-between">
         <Link href={base} className="flex items-center gap-3">
-          <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-teal-700 to-slate-950 text-lg font-black text-white shadow-lg">{site.logoText}</div>
+          {site.logo ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={site.logo} alt={`${site.name}のロゴ`} className="h-11 w-auto object-contain" />
+          ) : (
+            <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-teal-700 to-slate-950 text-lg font-black text-white shadow-lg">{site.logoText}</div>
+          )}
           <div>
             <p className="text-xl font-black tracking-tight text-slate-950">{site.name}</p>
             <p className="hidden text-xs font-bold text-slate-500 sm:block">{site.subName}</p>
