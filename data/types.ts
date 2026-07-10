@@ -7,6 +7,15 @@ export type Service = { name: string; label: string; text: string; image?: strin
 export type Strength = { title: string; text: string; label: string };
 export type Work = { title: string; area: string; period: string; description: string; image?: string };
 
+/** 業種カテゴリ（CTA文言・FLOW文言の出し分けに使用。未設定は construction 扱い） */
+export type BusinessCategory = 'construction' | 'service' | 'collection';
+
+/** FLOW（矢羽根ステップ）の1ステップ */
+export type FlowStep = { title: string; icon: string };
+
+/** FLOWセクション設定 */
+export type FlowConfig = { title: string; steps: FlowStep[] };
+
 export type Recruit = {
   title: string;
   catch: string;
@@ -33,6 +42,8 @@ export type SiteData = {
   slug: string;
   /** 業種の想定イメージカラー（メタデータ。現状デザインには未適用） */
   theme?: Theme;
+  /** 業種カテゴリ。CTA/FLOW の文言出し分けに使用。未設定は 'construction' */
+  category?: BusinessCategory;
   /** ヘッダーロゴの1文字（会社イニシャル等）。logo 画像がある場合はそちらを優先 */
   logoText: string;
   /** ロゴ画像URL（任意）。設定時はヘッダー左・フッター左にロゴ画像を表示 */

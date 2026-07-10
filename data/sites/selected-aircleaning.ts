@@ -4,6 +4,7 @@ import type { SiteData } from '../types';
 // エアコンクリーニングイチローと同一業務のため、文言はそのまま流用し企業情報・所在地表記のみ変更。
 export const selectedAircleaning: SiteData = {
   slug: 'selected-aircleaning',
+  category: 'service',
   logoText: 'S',
   theme: { primary: '#14263d', secondary: '#1f4e79', accent: '#c6a15b' },
   name: 'Selected',

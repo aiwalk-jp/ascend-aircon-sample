@@ -3,6 +3,7 @@ import type { SiteData } from '../types';
 // 個社サンプル：洗濯機のウラカーン（生活サービス／洗濯機クリーニング・修理）
 export const sentakukiUracaan: SiteData = {
   slug: 'sentakuki-uracaan',
+  category: 'service',
   logoText: 'U',
   theme: { primary: '#14263d', secondary: '#1f4e79', accent: '#c6a15b' },
   name: '洗濯機のウラカーン',

@@ -3,6 +3,7 @@ import type { SiteData } from '../types';
 // 業種ベース：遺品整理（仮会社「サンプル遺品整理サービス」）
 export const baseRelics: SiteData = {
   slug: 'base-relics',
+  category: 'collection',
   logoText: 'S',
   theme: { primary: '#1f2a44', secondary: '#4b5563', accent: '#cbb994' },
   name: 'サンプル遺品整理サービス',

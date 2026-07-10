@@ -3,6 +3,7 @@ import type { SiteData } from '../types';
 // 業種ベース：不用品回収（仮会社「サンプル回収サービス」）
 export const baseJunkRemoval: SiteData = {
   slug: 'base-junk-removal',
+  category: 'collection',
   logoText: 'J',
   theme: { primary: '#14263d', secondary: '#1f6f4e', accent: '#4caf7d' },
   name: 'サンプル回収サービス',

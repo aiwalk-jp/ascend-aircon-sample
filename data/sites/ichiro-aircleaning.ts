@@ -3,6 +3,7 @@ import type { SiteData } from '../types';
 // 個社サンプル：エアコンクリーニングイチロー（エアコンクリーニング・トラブル対応）
 export const ichiroAircleaning: SiteData = {
   slug: 'ichiro-aircleaning',
+  category: 'service',
   logoText: 'I',
   theme: { primary: '#14263d', secondary: '#1f4e79', accent: '#c6a15b' },
   name: 'エアコンクリーニングイチロー',

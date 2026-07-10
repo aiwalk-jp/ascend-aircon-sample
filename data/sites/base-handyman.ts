@@ -4,6 +4,7 @@ import type { SiteData } from '../types';
 // 用意済みの便利屋向け画像に合わせて構成・文言を最適化。
 export const baseHandyman: SiteData = {
   slug: 'base-handyman',
+  category: 'service',
   logoText: 'B',
   theme: { primary: '#1f3a34', secondary: '#14263d', accent: '#d9a441' },
   name: 'サンプル便利屋サービス',

@@ -127,3 +127,18 @@ body {
 
 /* dark-panel（事業紹介/採用ページの上部帯） */
 .theme-flumen .dark-panel { background: radial-gradient(circle at 10% 12%, rgba(34,211,238,.20), transparent 32%), linear-gradient(135deg, #0b4055 0%, #071525 74%); }
+
+/* ============================================================
+   FLOW 矢羽根（chevron）ステップUI（全業種共通）
+   PC: 横並びで矢羽根が連結 / SP(<=767px): 縦積みの通常カード
+   ============================================================ */
+.flow-arrow { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%, 18px 50%); }
+.flow-arrow:first-child { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%); }
+.flow-arrow:last-child { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 18px 50%); }
+@media (max-width: 767px) {
+  .flow-arrow, .flow-arrow:first-child, .flow-arrow:last-child { clip-path: none; margin-left: 0; }
+}
+
+/* CTA/FLOW で追加使用する色（Flumen テーマ用の補完） */
+.theme-flumen .from-teal-50 { --tw-gradient-from: #ecfeff var(--tw-gradient-from-position); --tw-gradient-to: rgb(236 254 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.theme-flumen .hover\:bg-teal-50:hover { background-color: #ecfeff; }

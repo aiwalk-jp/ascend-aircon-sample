@@ -3,6 +3,7 @@ import type { SiteData } from '../types';
 // 業種ベース：カーコーティング（仮会社「サンプルカーコーティング」）
 export const baseCarCoating: SiteData = {
   slug: 'base-car-coating',
+  category: 'service',
   logoText: 'C',
   theme: { primary: '#111318', secondary: '#2b2f36', accent: '#c7ccd1' },
   name: 'サンプルカーコーティング',

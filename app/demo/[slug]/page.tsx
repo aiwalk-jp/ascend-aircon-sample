@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { PhotoFrame } from '@/components/PhotoFrame';
 import { getAllSites, getSite } from '@/data/sites';
 import { compactGridClass, gridClass } from '@/lib/grid';
+import { CTA_CONFIG, FLOW_CONFIG, categoryOf } from '@/lib/flow';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -36,7 +37,10 @@ export default async function Home({ params }: Props) {
   const hasStrengths = site.strengths.length > 0;
   const hasWorks = site.works.length > 0;
   const hasServices = visibleServices.length > 0;
-  const hasFlow = site.flow.length > 0;
+  // CTA + FLOW（矢羽根）は業種カテゴリで文言を出し分け、全業種共通で表示
+  const category = categoryOf(site.category);
+  const flowCfg = FLOW_CONFIG[category];
+  const cta = CTA_CONFIG[category];
 
   return (
     <div className={site.brandClass}>
@@ -180,20 +184,38 @@ export default async function Home({ params }: Props) {
           </section>
         )}
 
-        {hasFlow && (
-          <section className="container-x py-14">
-            <p className="section-label">FLOW</p>
-            <h2 className="mt-4 text-4xl font-black tracking-tight">ご相談から施工までの流れ</h2>
-            <div className={`mt-9 grid gap-4 ${compactGridClass(site.flow.length)}`}>
-              {site.flow.map((f, i) => (
-                <div key={f} className="relative rounded-[1.4rem] bg-white p-5 text-center shadow-[0_15px_45px_rgba(15,23,42,.08)] ring-1 ring-slate-200">
-                  <div className="mx-auto grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-teal-700 to-slate-950 text-sm font-black text-white shadow-lg">{i + 1}</div>
-                  <p className="mt-4 text-sm font-black leading-6">{f}</p>
-                </div>
-              ))}
+        {/* CTA（FLOW直前・CV導線） */}
+        <section className="container-x pt-4">
+          <div className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-teal-50 via-white to-teal-50 p-8 text-center ring-1 ring-slate-200 shadow-[0_18px_50px_rgba(15,23,42,.08)] md:p-12">
+            <h2 className="text-2xl font-black leading-tight md:text-3xl">{cta.catch}</h2>
+            <p className="mx-auto mt-4 max-w-2xl leading-8 text-slate-600">{cta.sub}</p>
+            <div className="mt-7 flex flex-wrap justify-center gap-3">
+              <a href="#contact" className="inline-flex min-h-[52px] items-center justify-center rounded-2xl bg-teal-700 px-8 py-4 font-black text-white shadow-lg shadow-teal-900/20 transition hover:-translate-y-0.5 hover:bg-teal-800">無料で相談する</a>
+              <a href={`tel:${site.tel}`} className="inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-teal-700 bg-white px-8 py-4 font-black text-teal-800 transition hover:-translate-y-0.5 hover:bg-teal-50">電話で問い合わせる</a>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
+
+        {/* FLOW（矢羽根ステップ） */}
+        <section className="container-x py-14">
+          <p className="section-label">FLOW</p>
+          <h2 className="mt-4 text-4xl font-black tracking-tight">{flowCfg.title}</h2>
+          <div className="mt-9 flex flex-col gap-3 md:flex-row md:items-stretch md:gap-0">
+            {flowCfg.steps.map((step, i) => (
+              <div
+                key={step.title}
+                className={`flow-arrow relative flex items-center gap-3 rounded-2xl bg-white p-4 ring-1 ring-slate-200 [filter:drop-shadow(0_10px_22px_rgba(15,23,42,.08))] md:flex-1 md:rounded-none md:py-5 ${i === 0 ? 'md:pl-5' : 'md:-ml-[18px] md:pl-8'}`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={step.icon} alt="" className="h-9 w-9 shrink-0" />
+                <div>
+                  <p className="text-[11px] font-black tracking-[.14em] text-teal-700">STEP {i + 1}</p>
+                  <p className="mt-0.5 text-sm font-black leading-snug">{step.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section id="contact" className="container-x pb-14">
           <div className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-teal-800 to-slate-950 p-8 text-white shadow-[0_30px_90px_rgba(15,23,42,.22)] md:flex md:items-center md:justify-between md:p-10">

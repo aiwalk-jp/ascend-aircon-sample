@@ -3,6 +3,7 @@ import type { SiteData } from '../types';
 // 業種ベース：ハウスクリーニング（仮会社「サンプルクリーニング」）
 export const baseHouseCleaning: SiteData = {
   slug: 'base-house-cleaning',
+  category: 'service',
   logoText: 'H',
   theme: { primary: '#0e6e6a', secondary: '#2a9d8f', accent: '#bfe3e0' },
   name: 'サンプルクリーニング',
