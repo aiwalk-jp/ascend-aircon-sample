@@ -19,6 +19,7 @@ import { sentakukiUracaan } from './sentakuki-uracaan';
 import { ichiroAircleaning } from './ichiro-aircleaning';
 import { selectedAircleaning } from './selected-aircleaning';
 import { flumen } from './flumen';
+import { oitaAircon } from './oita-aircon';
 
 // 個社サンプルはここに1行 import + 配列追加するだけで /demo/<slug> が増える。
 // base-* は業種ベース（雛形）。個社対応時は base-* を複製して社名等を差し替える。
@@ -43,6 +44,7 @@ const siteList: SiteData[] = [
   ichiroAircleaning,
   selectedAircleaning,
   flumen,
+  oitaAircon,
 ];
 
 /** slug をキーにした会社データの辞書 */
