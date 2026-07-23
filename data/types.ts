@@ -50,6 +50,8 @@ export type SiteData = {
   logo?: string;
   /** 代表者名（任意）。フッター会社情報に表示 */
   representative?: string;
+  /** 建設業許可番号など（任意）。フッター会社情報に表示 */
+  license?: string;
   /** ページ全体に付与するブランドテーマ用クラス（任意。例: 'theme-flumen'）。色のみ差し替え */
   brandClass?: string;
   /** 事業紹介ページ上部のリード文（任意）。未設定なら既定文 */
