@@ -5,9 +5,9 @@ export function Footer({ site }: { site: SiteData }) {
     <footer className="bg-slate-950 text-white">
       <div className="container-x grid gap-8 py-12 md:grid-cols-[1fr_1fr]">
         <div>
-          {site.logo && (
+          {(site.logoFooter ?? site.logo) && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={site.logo} alt={`${site.name}のロゴ`} className="mb-4 h-12 w-auto object-contain" />
+            <img src={site.logoFooter ?? site.logo} alt={`${site.name}のロゴ`} className="mb-4 h-12 w-auto object-contain" />
           )}
           <p className="text-2xl font-black">{site.name}</p>
           <p className="mt-2 text-slate-300">{site.subName}</p>

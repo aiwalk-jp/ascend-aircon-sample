@@ -48,6 +48,8 @@ export type SiteData = {
   logoText: string;
   /** ロゴ画像URL（任意）。設定時はヘッダー左・フッター左にロゴ画像を表示 */
   logo?: string;
+  /** フッター専用ロゴ画像URL（任意）。フッターは暗色背景のため白背景ロゴ等を指定可。未設定なら logo を流用 */
+  logoFooter?: string;
   /** 代表者名（任意）。フッター会社情報に表示 */
   representative?: string;
   /** 建設業許可番号など（任意）。フッター会社情報に表示 */
