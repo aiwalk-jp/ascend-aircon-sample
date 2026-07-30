@@ -4,6 +4,7 @@ import type { SiteData } from '../types';
 export const katoPainting: SiteData = {
   slug: 'kato-painting',
   logoText: 'K',
+  logo: '/images/kato-painting/logo.png',
   representative: '代表　加藤勇武',
   theme: { primary: '#143a2e', secondary: '#0f2f35', accent: '#c6a15b' },
   name: '加藤塗装',
